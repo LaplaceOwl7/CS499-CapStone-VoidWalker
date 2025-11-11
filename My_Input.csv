@@ -1,0 +1,31 @@
+MATH201,Discrete Mathematics
+CSCI300,Introduction to Algorithms,CSCI200,MATH201
+CSCI350,Operating Systems,CSCI300
+CSCI101,Introduction to Programming in C++,CSCI100
+CSCI100,Introduction to Computer Science
+CSCI301,Advanced Programming in C++,CSCI101
+CSCI400,Large Software Development,CSCI301,CSCI350
+CSCI200,Data Structures,CSCI101
+PHY202,Quantum Physics,MATH201
+CHEM150,Organic Chemistry,CHEM100
+BIO101,Introduction to Biology
+ENG210,Shakespearean Literature
+ART150,Introduction to Visual Arts
+PSYCH301,Abnormal Psychology,PSYCH101
+SOC,Sociological Theories
+HIST400,Modern World History,HIST200
+ECON350,International Economics,ECON200
+MUSIC120,Music Appreciation
+PHIL220,Philosophy of Ethics,PHIL101
+LING101,Introduction to Linguistics
+GEOG300,Global Environmental Issues,GEOG200
+STAT250,Statistical Analysis
+FRENCH101,Elementary French
+SPANISH201,Intermediate Spanish,SPANISH101
+COMPUTERVISION401,Advanced Computer Vision,CSCI400
+ROBOTICS450,Introduction to Robotics,CSCI400
+CRYPTOGRAPHY320,Applied Cryptography,CSCI301
+GAMEDESIGN250,Game Design Fundamentals,CSCI101
+ASTROPHYSICS410,Stellar Astrophysics,PHY202
+LOLZ200, Cat Analysis, LOLZ0
+
