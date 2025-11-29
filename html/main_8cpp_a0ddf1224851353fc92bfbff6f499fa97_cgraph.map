@@ -1,0 +1,22 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,60,157"/>
+<area shape="rect" id="Node000002" href="$classCourseManager.html#a5d20c3df47279f70b97bcaf19cfe7b26" title="Displays the textual menu choices for the application." alt="" coords="116,5,331,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,130,64,89,84,67,107,48,136,33,139,37,109,52,87,71,69,93,43,133"/>
+<area shape="rect" id="Node000003" href="$classErrLog.html#a881e5dfb84c92034197bd001ad2391a6" title="Generates a log text file in the logs folder." alt="" coords="606,81,747,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="46,130,73,109,107,91,172,75,238,65,305,60,371,58,494,64,594,77,593,82,494,70,371,64,305,65,239,70,173,80,109,97,75,113,49,134"/>
+<area shape="rect" id="Node000005" href="$namespaceVarLoader.html#ad2f9faaa736bace31d2f5830ff18c411" title="Safely takes an integer from a user, preventing buffer overflows." alt="" coords="130,107,317,132"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="60,139,116,131,116,136,60,144"/>
+<area shape="rect" id="Node000006" href="$classCourseManager.html#a822e86d0e530f3a2d9cbc1336de6c303" title="Loads master vector of Course objects into memory from a CSV file." alt="" coords="117,156,329,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="60,145,110,152,109,157,60,151"/>
+<area shape="rect" id="Node000009" href="$classCourseManager.html#a4499ac20135f6073048ec8b9666b1c86" title="Prints all courses in the provided vector to std::cout, including their ID, title,..." alt="" coords="108,205,339,231"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="51,155,77,174,109,192,130,199,128,204,107,196,74,179,48,160"/>
+<area shape="rect" id="Node000010" href="$classCourseManager.html#a7b4cf91c7bc91f19ac66aafb1ed192de" title="Performs a linear search for a specific course by ID." alt="" coords="113,255,333,280"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="42,156,67,199,86,222,110,241,120,247,118,252,106,246,83,226,63,202,38,159"/>
+<area shape="rect" id="Node000004" href="$classErrLog.html#af7345266274741d05394ccb688e228ad" title="generates a timestamp for files" alt="" coords="804,81,975,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="747,91,790,91,790,97,747,97"/>
+<area shape="rect" id="Node000007" href="$namespaceVarLoader.html#ac05c3669519ffaa45aa1fd78f01aa4d7" title="Takes a CSV and parses it to resolve them into course objects." alt="" coords="387,131,549,156"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="329,155,373,150,373,156,330,160"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="522,128,609,107,610,112,523,133"/>
+<area shape="rect" id="Node000008" href="$namespaceVarLoader.html#abd49e6ee2c902e65b2d7f196b7c4f435" title=" " alt="" coords="597,131,756,156"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="550,141,583,141,583,146,550,146"/>
+</map>

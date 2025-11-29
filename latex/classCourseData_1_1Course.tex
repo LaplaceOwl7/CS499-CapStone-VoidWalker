@@ -1,0 +1,145 @@
+\doxysection{Course\+Data\+::Course Class Reference}
+\hypertarget{classCourseData_1_1Course}{}\label{classCourseData_1_1Course}\index{CourseData::Course@{CourseData::Course}}
+
+
+{\ttfamily \#include $<$Course.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCourseData_1_1Course_a6bb73fcc512a1fc9469fad8f0adddefe}{Course}} (const std\+::string \&t\+\_\+id, const std\+::string \&t\+\_\+title, const std\+::vector$<$ std\+::string $>$ \&t\+\_\+reqs=\{\})
+\item 
+\mbox{\hyperlink{classCourseData_1_1Course_a42ed0b46572cf4a3b5055505b5b3a869}{Course}} ()
+\item 
+void \mbox{\hyperlink{classCourseData_1_1Course_ae5d00bf608eaff62a12c9ddbb0b665be}{set\+Course\+ID}} (const std\+::string \&t\+\_\+set)
+\item 
+const std\+::string \& \mbox{\hyperlink{classCourseData_1_1Course_aaa75b74aed897265dd58f95b0c411c53}{get\+Course\+ID}} () const
+\item 
+void \mbox{\hyperlink{classCourseData_1_1Course_ab88ad352872cb60569659bc31aeac469}{set\+Course\+Title}} (const std\+::string \&t\+\_\+title)
+\item 
+const std\+::string \& \mbox{\hyperlink{classCourseData_1_1Course_a03874cb68bcdafa4fdd2096027738ac8}{get\+Course\+Title}} () const
+\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classCourseData_1_1Course_a4e6e57b3cdc1c0d7ab95dfd81ab8d915}{get\+Course\+Prerequisites}} () const
+\item 
+void \mbox{\hyperlink{classCourseData_1_1Course_a811af224af4473b820540c49db55f6f8}{add\+Course\+Prerequisite}} (const \mbox{\hyperlink{classCourseData_1_1Course}{Course}} \&t\+\_\+new\+Pre\+Req)
+\item 
+bool \mbox{\hyperlink{classCourseData_1_1Course_a09aec09a5209f4b7a0bd8e9651efa38b}{remove\+Course\+Prerequisites}} (const \mbox{\hyperlink{classCourseData_1_1Course}{Course}} \&t\+\_\+old\+Pre\+Req)
+\item 
+bool \mbox{\hyperlink{classCourseData_1_1Course_ab4c3e6dd25ba060d672493280e6e5cb1}{remove\+Course\+Prerequisites}} (const std\+::string \&t\+\_\+old\+Pre\+Req)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCourseData_1_1Course_a249fd8c4f3b378538d54cfd14afd1ea3}{m\+\_\+id}}
+\item 
+std\+::string \mbox{\hyperlink{classCourseData_1_1Course_a7a078800ff04468f7d7b80a0b460fbb4}{m\+\_\+title}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classCourseData_1_1Course_a877787e91b4c699814af491a2e5dbe4c}{m\+\_\+prereqs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCourseData_1_1Course_a6bb73fcc512a1fc9469fad8f0adddefe}\label{classCourseData_1_1Course_a6bb73fcc512a1fc9469fad8f0adddefe} 
+\index{CourseData::Course@{CourseData::Course}!Course@{Course}}
+\index{Course@{Course}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{Course()}{Course()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Course\+::\+Course (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+id,  }\item[{const std\+::string \&}]{t\+\_\+title,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{t\+\_\+reqs = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classCourseData_1_1Course_a42ed0b46572cf4a3b5055505b5b3a869}\label{classCourseData_1_1Course_a42ed0b46572cf4a3b5055505b5b3a869} 
+\index{CourseData::Course@{CourseData::Course}!Course@{Course}}
+\index{Course@{Course}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{Course()}{Course()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Course\+Data\+::\+Course\+::\+Course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCourseData_1_1Course_a811af224af4473b820540c49db55f6f8}\label{classCourseData_1_1Course_a811af224af4473b820540c49db55f6f8} 
+\index{CourseData::Course@{CourseData::Course}!addCoursePrerequisite@{addCoursePrerequisite}}
+\index{addCoursePrerequisite@{addCoursePrerequisite}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{addCoursePrerequisite()}{addCoursePrerequisite()}}
+{\footnotesize\ttfamily void Course\+::add\+Course\+Prerequisite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCourseData_1_1Course}{Course}} \&}]{t\+\_\+new\+Pre\+Req }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCourseData_1_1Course_a811af224af4473b820540c49db55f6f8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCourseData_1_1Course_aaa75b74aed897265dd58f95b0c411c53}\label{classCourseData_1_1Course_aaa75b74aed897265dd58f95b0c411c53} 
+\index{CourseData::Course@{CourseData::Course}!getCourseID@{getCourseID}}
+\index{getCourseID@{getCourseID}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{getCourseID()}{getCourseID()}}
+{\footnotesize\ttfamily const std\+::string \& Course\+::get\+Course\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCourseData_1_1Course_aaa75b74aed897265dd58f95b0c411c53_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCourseData_1_1Course_a4e6e57b3cdc1c0d7ab95dfd81ab8d915}\label{classCourseData_1_1Course_a4e6e57b3cdc1c0d7ab95dfd81ab8d915} 
+\index{CourseData::Course@{CourseData::Course}!getCoursePrerequisites@{getCoursePrerequisites}}
+\index{getCoursePrerequisites@{getCoursePrerequisites}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{getCoursePrerequisites()}{getCoursePrerequisites()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Course\+::get\+Course\+Prerequisites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classCourseData_1_1Course_a03874cb68bcdafa4fdd2096027738ac8}\label{classCourseData_1_1Course_a03874cb68bcdafa4fdd2096027738ac8} 
+\index{CourseData::Course@{CourseData::Course}!getCourseTitle@{getCourseTitle}}
+\index{getCourseTitle@{getCourseTitle}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{getCourseTitle()}{getCourseTitle()}}
+{\footnotesize\ttfamily const std\+::string \& Course\+::get\+Course\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classCourseData_1_1Course_a09aec09a5209f4b7a0bd8e9651efa38b}\label{classCourseData_1_1Course_a09aec09a5209f4b7a0bd8e9651efa38b} 
+\index{CourseData::Course@{CourseData::Course}!removeCoursePrerequisites@{removeCoursePrerequisites}}
+\index{removeCoursePrerequisites@{removeCoursePrerequisites}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{removeCoursePrerequisites()}{removeCoursePrerequisites()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Course\+Data\+::\+Course\+::remove\+Course\+Prerequisites (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCourseData_1_1Course}{Course}} \&}]{t\+\_\+old\+Pre\+Req }\end{DoxyParamCaption})}
+
+\Hypertarget{classCourseData_1_1Course_ab4c3e6dd25ba060d672493280e6e5cb1}\label{classCourseData_1_1Course_ab4c3e6dd25ba060d672493280e6e5cb1} 
+\index{CourseData::Course@{CourseData::Course}!removeCoursePrerequisites@{removeCoursePrerequisites}}
+\index{removeCoursePrerequisites@{removeCoursePrerequisites}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{removeCoursePrerequisites()}{removeCoursePrerequisites()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Course\+::remove\+Course\+Prerequisites (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+old\+Pre\+Req }\end{DoxyParamCaption})}
+
+\Hypertarget{classCourseData_1_1Course_ae5d00bf608eaff62a12c9ddbb0b665be}\label{classCourseData_1_1Course_ae5d00bf608eaff62a12c9ddbb0b665be} 
+\index{CourseData::Course@{CourseData::Course}!setCourseID@{setCourseID}}
+\index{setCourseID@{setCourseID}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{setCourseID()}{setCourseID()}}
+{\footnotesize\ttfamily void Course\+::set\+Course\+ID (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+set }\end{DoxyParamCaption})}
+
+\Hypertarget{classCourseData_1_1Course_ab88ad352872cb60569659bc31aeac469}\label{classCourseData_1_1Course_ab88ad352872cb60569659bc31aeac469} 
+\index{CourseData::Course@{CourseData::Course}!setCourseTitle@{setCourseTitle}}
+\index{setCourseTitle@{setCourseTitle}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{setCourseTitle()}{setCourseTitle()}}
+{\footnotesize\ttfamily void Course\+::set\+Course\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+title }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classCourseData_1_1Course_a249fd8c4f3b378538d54cfd14afd1ea3}\label{classCourseData_1_1Course_a249fd8c4f3b378538d54cfd14afd1ea3} 
+\index{CourseData::Course@{CourseData::Course}!m\_id@{m\_id}}
+\index{m\_id@{m\_id}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{m\_id}{m\_id}}
+{\footnotesize\ttfamily std\+::string Course\+Data\+::\+Course\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classCourseData_1_1Course_a877787e91b4c699814af491a2e5dbe4c}\label{classCourseData_1_1Course_a877787e91b4c699814af491a2e5dbe4c} 
+\index{CourseData::Course@{CourseData::Course}!m\_prereqs@{m\_prereqs}}
+\index{m\_prereqs@{m\_prereqs}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{m\_prereqs}{m\_prereqs}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Course\+Data\+::\+Course\+::m\+\_\+prereqs\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classCourseData_1_1Course_a7a078800ff04468f7d7b80a0b460fbb4}\label{classCourseData_1_1Course_a7a078800ff04468f7d7b80a0b460fbb4} 
+\index{CourseData::Course@{CourseData::Course}!m\_title@{m\_title}}
+\index{m\_title@{m\_title}!CourseData::Course@{CourseData::Course}}
+\doxysubsubsection{\texorpdfstring{m\_title}{m\_title}}
+{\footnotesize\ttfamily std\+::string Course\+Data\+::\+Course\+::m\+\_\+title\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Course\+Management/\mbox{\hyperlink{Course_8hpp}{Course.\+hpp}}\item 
+src/\+Course\+Management/\mbox{\hyperlink{Course_8cpp}{Course.\+cpp}}\end{DoxyCompactItemize}

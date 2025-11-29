@@ -1,0 +1,88 @@
+\doxysection{archived/\+Functions.h File Reference}
+\hypertarget{Functions_8h}{}\label{Functions_8h}\index{archived/Functions.h@{archived/Functions.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Functions.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Functions_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCourse}{Course}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Functions_8h_a89b8fec42e19f131552aa65ae42c61e1}{FUNCTIONS\+\_\+H}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Functions_8h_a17dee39c24a671bcb92be27106f1ce5b}{whisper}} (string wisp)
+\item 
+void \mbox{\hyperlink{Functions_8h_ab8dc62f5593479960073ab50c9acf094}{print\+Course\+Information}} (const vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ \&courses, const string \&course\+Number)
+\item 
+vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ \mbox{\hyperlink{Functions_8h_a983aa5fd6a63f47aa1283735353142d8}{bubble\+Sort}} (vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ courses)
+\item 
+void \mbox{\hyperlink{Functions_8h_a847f7b67dedd175edc03c50757a22266}{print\+\_\+all\+\_\+courses}} (const vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ \&all\+Courses, bool reqs)
+\item 
+vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ \mbox{\hyperlink{Functions_8h_a162563c48b743078e4486ced217acac2}{mount\+CSV}} (const string \&csv\+Path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{Functions_8h_a89b8fec42e19f131552aa65ae42c61e1}\label{Functions_8h_a89b8fec42e19f131552aa65ae42c61e1} 
+\index{Functions.h@{Functions.h}!FUNCTIONS\_H@{FUNCTIONS\_H}}
+\index{FUNCTIONS\_H@{FUNCTIONS\_H}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{FUNCTIONS\_H}{FUNCTIONS\_H}}
+{\footnotesize\ttfamily \#define FUNCTIONS\+\_\+H}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Functions_8h_a983aa5fd6a63f47aa1283735353142d8}\label{Functions_8h_a983aa5fd6a63f47aa1283735353142d8} 
+\index{Functions.h@{Functions.h}!bubbleSort@{bubbleSort}}
+\index{bubbleSort@{bubbleSort}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{bubbleSort()}{bubbleSort()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ bubble\+Sort (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$}]{courses }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{Functions_8h_a983aa5fd6a63f47aa1283735353142d8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Functions_8h_a162563c48b743078e4486ced217acac2}\label{Functions_8h_a162563c48b743078e4486ced217acac2} 
+\index{Functions.h@{Functions.h}!mountCSV@{mountCSV}}
+\index{mountCSV@{mountCSV}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{mountCSV()}{mountCSV()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ mount\+CSV (\begin{DoxyParamCaption}\item[{const string \&}]{csv\+Path }\end{DoxyParamCaption})}
+
+\Hypertarget{Functions_8h_a847f7b67dedd175edc03c50757a22266}\label{Functions_8h_a847f7b67dedd175edc03c50757a22266} 
+\index{Functions.h@{Functions.h}!print\_all\_courses@{print\_all\_courses}}
+\index{print\_all\_courses@{print\_all\_courses}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{print\_all\_courses()}{print\_all\_courses()}}
+{\footnotesize\ttfamily void print\+\_\+all\+\_\+courses (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ \&}]{all\+Courses,  }\item[{bool}]{reqs }\end{DoxyParamCaption})}
+
+\Hypertarget{Functions_8h_ab8dc62f5593479960073ab50c9acf094}\label{Functions_8h_ab8dc62f5593479960073ab50c9acf094} 
+\index{Functions.h@{Functions.h}!printCourseInformation@{printCourseInformation}}
+\index{printCourseInformation@{printCourseInformation}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{printCourseInformation()}{printCourseInformation()}}
+{\footnotesize\ttfamily void print\+Course\+Information (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{structCourse}{Course}} $>$ \&}]{courses,  }\item[{const string \&}]{course\+Number }\end{DoxyParamCaption})}
+
+\Hypertarget{Functions_8h_a17dee39c24a671bcb92be27106f1ce5b}\label{Functions_8h_a17dee39c24a671bcb92be27106f1ce5b} 
+\index{Functions.h@{Functions.h}!whisper@{whisper}}
+\index{whisper@{whisper}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{whisper()}{whisper()}}
+{\footnotesize\ttfamily void whisper (\begin{DoxyParamCaption}\item[{string}]{wisp }\end{DoxyParamCaption})}
+

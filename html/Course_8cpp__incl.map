@@ -1,0 +1,13 @@
+<map id="src/CourseManagement/Course.cpp" name="src/CourseManagement/Course.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="116,5,292,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,91,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,48,84,89,82,85,165,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="192,167,251,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,47,170,63,159,80,153,99,156,118,171,139,191,157,187,161,167,143,151,120,148,99,154,78,166,59,180,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="309,167,371,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,29,326,37,358,49,387,67,412,92,417,111,409,130,393,147,374,162,371,157,390,143,405,127,412,111,407,95,384,71,356,54,324,42,292,35"/>
+<area shape="rect" id="Node000005" href="$Course_8hpp.html" title=" " alt="" coords="166,93,397,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="225,44,262,82,258,85,221,47"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="273,121,242,158,238,154,269,117"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="293,117,324,155,320,158,289,121"/>
+</map>

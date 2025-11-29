@@ -1,0 +1,63 @@
+\doxysection{Functions.\+h}
+\hypertarget{Functions_8h_source}{}\label{Functions_8h_source}\index{archived/Functions.h@{archived/Functions.h}}
+\mbox{\hyperlink{Functions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ FUNCTIONS\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ FUNCTIONS\_H}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <cctype>}\ \ \textcolor{comment}{//\ for\ toupper}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structCourse}{Course}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structCourse_a7eea21b1309ca4d64e5d9f03b91211da}{courseId}};\ \textcolor{comment}{//\ unique\ }}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structCourse_a26858138ea57821ca18e10fedc0531bc}{m\_title}};}
+\DoxyCodeLine{00019\ \ \ \ \ vector<Course>\ \mbox{\hyperlink{structCourse_a9cc2f23ae19c70ab05097496ebfaf162}{preReqs}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{structCourse_a6b959ccf15d9ceed9e9c14a701561982}{Course}}()\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structCourse_a7eea21b1309ca4d64e5d9f03b91211da}{courseId}}\ =\ \textcolor{stringliteral}{"{}Null"{}};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structCourse_a26858138ea57821ca18e10fedc0531bc}{m\_title}}\ =\ \textcolor{stringliteral}{"{}Null"{}};}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{structCourse_a0cbe3872f10f53f63996308fc4d528ba}{Course}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{structCourse_a7eea21b1309ca4d64e5d9f03b91211da}{courseId}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ title,\ \textcolor{keyword}{const}\ vector<Course>\&\ reqs)}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{structCourse_a7eea21b1309ca4d64e5d9f03b91211da}{courseId}}(\mbox{\hyperlink{structCourse_a7eea21b1309ca4d64e5d9f03b91211da}{courseId}}),\ \mbox{\hyperlink{structCourse_a26858138ea57821ca18e10fedc0531bc}{m\_title}}(title),\ \mbox{\hyperlink{structCourse_a9cc2f23ae19c70ab05097496ebfaf162}{preReqs}}(reqs)\ \{\}}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ Only\ for\ debugging}}
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Functions_8h_a17dee39c24a671bcb92be27106f1ce5b}{whisper}}(\textcolor{keywordtype}{string}\ wisp);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{comment}{//\ Show\ Course\ info\ for\ a\ specific\ course.}}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Functions_8h_ab8dc62f5593479960073ab50c9acf094}{printCourseInformation}}(\textcolor{keyword}{const}\ vector<Course>\&\ courses,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ courseNumber);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00038\ \textcolor{comment}{*\ Uses\ a\ bubble\ sort\ to\ reorganize\ the\ given\ vector.}}
+\DoxyCodeLine{00039\ \textcolor{comment}{*\ @param\ courses\ the\ unordered\ vector}}
+\DoxyCodeLine{00040\ \textcolor{comment}{*\ @return\ the\ alphanumerically\ ordered\ vector.}}
+\DoxyCodeLine{00041\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00042\ vector<Course>\ \mbox{\hyperlink{Functions_8h_a983aa5fd6a63f47aa1283735353142d8}{bubbleSort}}(vector<Course>\ courses);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00045\ \textcolor{comment}{*\ Helper\ function\ for\ orderCoruses}}
+\DoxyCodeLine{00046\ \textcolor{comment}{*@\ param\ vector\ to\ list\ courses;\ reqs\ is\ if\ you\ want\ the\ preReqs\ listed.}}
+\DoxyCodeLine{00047\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Functions_8h_a847f7b67dedd175edc03c50757a22266}{print\_all\_courses}}(\textcolor{keyword}{const}\ vector<Course>\&\ allCourses,\ \textcolor{keywordtype}{bool}\ reqs);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ \ \ \ Load\ a\ csv\ to\ the\ vector}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ *\ @param\ path\ to\ the\ csv.}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ *\ @return\ The\ master\ vector\ to\ hold\ all\ the\ courses.}}
+\DoxyCodeLine{00054\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00055\ vector<Course>\ \mbox{\hyperlink{Functions_8h_a162563c48b743078e4486ced217acac2}{mountCSV}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ csvPath);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

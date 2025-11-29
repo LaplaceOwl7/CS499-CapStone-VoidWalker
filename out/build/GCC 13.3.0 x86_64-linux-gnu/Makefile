@@ -177,6 +177,102 @@ src/CourseManagement/CourseManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/CourseManagement/CourseManager.cpp.s
 .PHONY : src/CourseManagement/CourseManager.cpp.s
 
+src/Database/DataManager.o: src/Database/DataManager.cpp.o
+.PHONY : src/Database/DataManager.o
+
+# target to build an object file
+src/Database/DataManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o
+.PHONY : src/Database/DataManager.cpp.o
+
+src/Database/DataManager.i: src/Database/DataManager.cpp.i
+.PHONY : src/Database/DataManager.i
+
+# target to preprocess a source file
+src/Database/DataManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.i
+.PHONY : src/Database/DataManager.cpp.i
+
+src/Database/DataManager.s: src/Database/DataManager.cpp.s
+.PHONY : src/Database/DataManager.s
+
+# target to generate assembly for a file
+src/Database/DataManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.s
+.PHONY : src/Database/DataManager.cpp.s
+
+src/Database/Recorder.o: src/Database/Recorder.cpp.o
+.PHONY : src/Database/Recorder.o
+
+# target to build an object file
+src/Database/Recorder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o
+.PHONY : src/Database/Recorder.cpp.o
+
+src/Database/Recorder.i: src/Database/Recorder.cpp.i
+.PHONY : src/Database/Recorder.i
+
+# target to preprocess a source file
+src/Database/Recorder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.i
+.PHONY : src/Database/Recorder.cpp.i
+
+src/Database/Recorder.s: src/Database/Recorder.cpp.s
+.PHONY : src/Database/Recorder.s
+
+# target to generate assembly for a file
+src/Database/Recorder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.s
+.PHONY : src/Database/Recorder.cpp.s
+
+src/Database/User.o: src/Database/User.cpp.o
+.PHONY : src/Database/User.o
+
+# target to build an object file
+src/Database/User.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/User.cpp.o
+.PHONY : src/Database/User.cpp.o
+
+src/Database/User.i: src/Database/User.cpp.i
+.PHONY : src/Database/User.i
+
+# target to preprocess a source file
+src/Database/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/User.cpp.i
+.PHONY : src/Database/User.cpp.i
+
+src/Database/User.s: src/Database/User.cpp.s
+.PHONY : src/Database/User.s
+
+# target to generate assembly for a file
+src/Database/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Database/User.cpp.s
+.PHONY : src/Database/User.cpp.s
+
+src/FileManagement/Benchmarker.o: src/FileManagement/Benchmarker.cpp.o
+.PHONY : src/FileManagement/Benchmarker.o
+
+# target to build an object file
+src/FileManagement/Benchmarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o
+.PHONY : src/FileManagement/Benchmarker.cpp.o
+
+src/FileManagement/Benchmarker.i: src/FileManagement/Benchmarker.cpp.i
+.PHONY : src/FileManagement/Benchmarker.i
+
+# target to preprocess a source file
+src/FileManagement/Benchmarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.i
+.PHONY : src/FileManagement/Benchmarker.cpp.i
+
+src/FileManagement/Benchmarker.s: src/FileManagement/Benchmarker.cpp.s
+.PHONY : src/FileManagement/Benchmarker.s
+
+# target to generate assembly for a file
+src/FileManagement/Benchmarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.s
+.PHONY : src/FileManagement/Benchmarker.cpp.s
+
 src/Sorters/BubbleSort.o: src/Sorters/BubbleSort.cpp.o
 .PHONY : src/Sorters/BubbleSort.o
 
@@ -273,6 +369,30 @@ src/Sorters/Sorter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Sorters/Sorter.cpp.s
 .PHONY : src/Sorters/Sorter.cpp.s
 
+src/Sorters/Timer.o: src/Sorters/Timer.cpp.o
+.PHONY : src/Sorters/Timer.o
+
+# target to build an object file
+src/Sorters/Timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o
+.PHONY : src/Sorters/Timer.cpp.o
+
+src/Sorters/Timer.i: src/Sorters/Timer.cpp.i
+.PHONY : src/Sorters/Timer.i
+
+# target to preprocess a source file
+src/Sorters/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.i
+.PHONY : src/Sorters/Timer.cpp.i
+
+src/Sorters/Timer.s: src/Sorters/Timer.cpp.s
+.PHONY : src/Sorters/Timer.s
+
+# target to generate assembly for a file
+src/Sorters/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.s
+.PHONY : src/Sorters/Timer.cpp.s
+
 src/ValidationTools/Err.o: src/ValidationTools/Err.cpp.o
 .PHONY : src/ValidationTools/Err.o
 
@@ -360,6 +480,18 @@ help:
 	@echo "... src/CourseManagement/CourseManager.o"
 	@echo "... src/CourseManagement/CourseManager.i"
 	@echo "... src/CourseManagement/CourseManager.s"
+	@echo "... src/Database/DataManager.o"
+	@echo "... src/Database/DataManager.i"
+	@echo "... src/Database/DataManager.s"
+	@echo "... src/Database/Recorder.o"
+	@echo "... src/Database/Recorder.i"
+	@echo "... src/Database/Recorder.s"
+	@echo "... src/Database/User.o"
+	@echo "... src/Database/User.i"
+	@echo "... src/Database/User.s"
+	@echo "... src/FileManagement/Benchmarker.o"
+	@echo "... src/FileManagement/Benchmarker.i"
+	@echo "... src/FileManagement/Benchmarker.s"
 	@echo "... src/Sorters/BubbleSort.o"
 	@echo "... src/Sorters/BubbleSort.i"
 	@echo "... src/Sorters/BubbleSort.s"
@@ -372,6 +504,9 @@ help:
 	@echo "... src/Sorters/Sorter.o"
 	@echo "... src/Sorters/Sorter.i"
 	@echo "... src/Sorters/Sorter.s"
+	@echo "... src/Sorters/Timer.o"
+	@echo "... src/Sorters/Timer.i"
+	@echo "... src/Sorters/Timer.s"
 	@echo "... src/ValidationTools/Err.o"
 	@echo "... src/ValidationTools/Err.i"
 	@echo "... src/ValidationTools/Err.s"

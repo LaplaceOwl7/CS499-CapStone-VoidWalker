@@ -3,8 +3,9 @@
 #include <sstream>
 #include <fstream>
 #include <iomanip>
+#include <filesystem>
 
-#include "../ValidationTools/Err.hpp"
+#include "ValidationTools/Err.hpp"
 
 /// @brief generates a timestamp for files
 /// @return a string of the current time
@@ -26,11 +27,11 @@ std::string ErrLog::genTimeStamp() {
 /// @param t_message 
 void ErrLog::genLogFile(const std::string& t_message) {
     // Define log path
-    std::string t_logFilePath = "./logs/details.log";
+    std::filesystem::create_directories("logs");
+    std::string t_logFilePath = "logs/details.log";
     // Open the file; specify appending first
     std::ofstream file(t_logFilePath, std::ios::out | std::ios::app);
 
-    
     // Is the file actually open?
     if (!file) {
         std::cerr << "Failed to open file\n";

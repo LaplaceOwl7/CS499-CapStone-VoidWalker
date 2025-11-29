@@ -1,0 +1,6 @@
+<map id="sorter::partition" name="sorter::partition">
+<area shape="rect" id="Node000001" title="Partition the sub&#45;array of arr between indices low and high, inclusive. Uses the last element as pivo..." alt="" coords="183,29,305,55"/>
+<area shape="rect" id="Node000002" href="$namespacesorter.html#a31eb666d8b45bf29f4cb1a5a92a697f0" title=" " alt="" coords="5,29,135,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,45,135,45,135,39,169,39"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="100,19,92,11,70,8,52,10,42,15,40,20,46,28,41,31,35,21,38,11,50,5,70,3,94,6,104,15"/>
+</map>

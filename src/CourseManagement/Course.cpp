@@ -45,4 +45,11 @@ namespace CourseData {
         m_prereqs.erase(it);
         return true;
     }
+
+    void Course::setCoursePrerequisites(
+        const std::vector<std::string>& t_newPrereqs
+    ) {
+        m_prereqs = t_newPrereqs;
+    }
+
 } // ns: CourseSystem

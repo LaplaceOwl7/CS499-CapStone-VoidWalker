@@ -1,0 +1,110 @@
+\doxysection{Var\+Loader Namespace Reference}
+\hypertarget{namespaceVarLoader}{}\label{namespaceVarLoader}\index{VarLoader@{VarLoader}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceVarLoader_abd49e6ee2c902e65b2d7f196b7c4f435}{parse\+Line}} (const std\+::string \&t\+\_\+line, std\+::string \&t\+\_\+id, std\+::string \&t\+\_\+title, std\+::vector$<$ std\+::string $>$ \&t\+\_\+raw\+Prereqs)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \mbox{\hyperlink{namespaceVarLoader_ac05c3669519ffaa45aa1fd78f01aa4d7}{mount\+CSV}} (const std\+::string \&t\+\_\+csv\+Path)
+\begin{DoxyCompactList}\small\item\em Takes a CSV and parses it to resolve them into course objects. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceVarLoader_ad2f9faaa736bace31d2f5830ff18c411}{get\+Int\+From\+Cin}} ()
+\begin{DoxyCompactList}\small\item\em Safely takes an integer from a user, preventing buffer overflows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classErrLog}{Err\+Log}} \mbox{\hyperlink{namespaceVarLoader_afa43b5ba74adaf744f3f927c9fbe605d}{err}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceVarLoader_ad2f9faaa736bace31d2f5830ff18c411}\label{namespaceVarLoader_ad2f9faaa736bace31d2f5830ff18c411} 
+\index{VarLoader@{VarLoader}!getIntFromCin@{getIntFromCin}}
+\index{getIntFromCin@{getIntFromCin}!VarLoader@{VarLoader}}
+\doxysubsubsection{\texorpdfstring{getIntFromCin()}{getIntFromCin()}}
+{\footnotesize\ttfamily int Var\+Loader\+::get\+Int\+From\+Cin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safely takes an integer from a user, preventing buffer overflows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always an integer 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+handles user inputs by itself 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+
+\end{DoxyPostcond}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{namespaceVarLoader_ad2f9faaa736bace31d2f5830ff18c411_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceVarLoader_ac05c3669519ffaa45aa1fd78f01aa4d7}\label{namespaceVarLoader_ac05c3669519ffaa45aa1fd78f01aa4d7} 
+\index{VarLoader@{VarLoader}!mountCSV@{mountCSV}}
+\index{mountCSV@{mountCSV}!VarLoader@{VarLoader}}
+\doxysubsubsection{\texorpdfstring{mountCSV()}{mountCSV()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ Var\+Loader\+::mount\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+csv\+Path }\end{DoxyParamCaption})}
+
+
+
+Takes a CSV and parses it to resolve them into course objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+csv\+Path,a} & path to the CSV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of all the courses from the CSV 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Needs a valid CSV with correct formatting. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Produce a vector with course objects with in it. 
+\end{DoxyPostcond}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceVarLoader_ac05c3669519ffaa45aa1fd78f01aa4d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceVarLoader_ac05c3669519ffaa45aa1fd78f01aa4d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceVarLoader_abd49e6ee2c902e65b2d7f196b7c4f435}\label{namespaceVarLoader_abd49e6ee2c902e65b2d7f196b7c4f435} 
+\index{VarLoader@{VarLoader}!parseLine@{parseLine}}
+\index{parseLine@{parseLine}!VarLoader@{VarLoader}}
+\doxysubsubsection{\texorpdfstring{parseLine()}{parseLine()}}
+{\footnotesize\ttfamily bool Var\+Loader\+::parse\+Line (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+line,  }\item[{std\+::string \&}]{t\+\_\+id,  }\item[{std\+::string \&}]{t\+\_\+title,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{t\+\_\+raw\+Prereqs }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceVarLoader_abd49e6ee2c902e65b2d7f196b7c4f435_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceVarLoader_afa43b5ba74adaf744f3f927c9fbe605d}\label{namespaceVarLoader_afa43b5ba74adaf744f3f927c9fbe605d} 
+\index{VarLoader@{VarLoader}!err@{err}}
+\index{err@{err}!VarLoader@{VarLoader}}
+\doxysubsubsection{\texorpdfstring{err}{err}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classErrLog}{Err\+Log}} Var\+Loader\+::err}
+

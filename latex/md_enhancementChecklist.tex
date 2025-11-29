@@ -1,0 +1,217 @@
+\chapter{CS-\/499 Project Enhancement Checklist}
+\hypertarget{md_enhancementChecklist}{}\label{md_enhancementChecklist}\index{CS-\/499 Project Enhancement Checklist@{CS-\/499 Project Enhancement Checklist}}
+\label{md_enhancementChecklist_autotoc_md29}%
+\Hypertarget{md_enhancementChecklist_autotoc_md29}%
+ \DoxyHorRuler{0}
+\hypertarget{md_enhancementChecklist_autotoc_md31}{}\doxysection{\texorpdfstring{General / Global Improvements}{General / Global Improvements}}\label{md_enhancementChecklist_autotoc_md31}
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Refactor spaghetti code into modular, class-\/based design ~\newline
+
+\item \mbox{[}x\mbox{]} Split code into multiple header ({\ttfamily .h}) and source ({\ttfamily .cpp}) files ~\newline
+
+\item \mbox{[}x\mbox{]} Enforce consistent naming conventions across all files ~\newline
+
+\item \mbox{[}x\mbox{]} Add detailed in-\/line comments and external documentation ~\newline
+
+\item \mbox{[} \mbox{]} Implement structured error handling and input validation ~\newline
+
+\item \mbox{[} \mbox{]} Integrate logging for runtime errors and user actions ~\newline
+
+\item \mbox{[} \mbox{]} Apply input sanitization to all user-\/facing operations ~\newline
+
+\item \mbox{[} \mbox{]} Implement defensive programming and secure coding practices ~\newline
+
+\item \mbox{[} \mbox{]} Create UML class and flow diagrams for clarity ~\newline
+
+\item \mbox{[} \mbox{]} Include pseudocode and flowcharts for each major process ~\newline
+
+\item \mbox{[} \mbox{]} Add benchmarking for performance analysis ~\newline
+
+\item \mbox{[} \mbox{]} Maintain code readability and scalability ~\newline
+
+\item \mbox{[}X\mbox{]} Use Git\+Hub for version control and professional documentation ~\newline
+
+\item \mbox{[} \mbox{]} Demonstrate code review and reflective design practices ~\newline
+
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_enhancementChecklist_autotoc_md33}{}\doxysection{\texorpdfstring{Category One\+: Software Engineering \& Design}{Category One: Software Engineering \& Design}}\label{md_enhancementChecklist_autotoc_md33}
+\hypertarget{md_enhancementChecklist_autotoc_md34}{}\doxysubsection{\texorpdfstring{Object-\/\+Oriented Refactoring}{Object-Oriented Refactoring}}\label{md_enhancementChecklist_autotoc_md34}
+
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Create a {\ttfamily \doxylink{structCourse}{Course}} class for course objects ~\newline
+
+\item \mbox{[}x\mbox{]} Create a {\ttfamily \doxylink{classCourseManager}{Course\+Manager}} class to handle CSV/database operations
+\begin{DoxyItemize}
+\item \doxylink{Validator_8cpp}{Validator.\+cpp} does that.
+\end{DoxyItemize}
+\item \mbox{[} \mbox{]} Add a main controller or menu system to manage program flow ~\newline
+
+\item \mbox{[} \mbox{]} Separate UI/menu logic from data and backend logic ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md35}{}\doxysubsection{\texorpdfstring{Architecture \& Maintainability}{Architecture \& Maintainability}}\label{md_enhancementChecklist_autotoc_md35}
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Modularize project into logical components ~\newline
+
+\item \mbox{[}x\mbox{]} Implement encapsulation and abstraction (hide internal data, expose clear interfaces) ~\newline
+
+\item \mbox{[}X\mbox{]} Use design patterns where appropriate (factory, strategy, etc.)
+\begin{DoxyItemize}
+\item Waived; not often implemented correctly.
+\end{DoxyItemize}
+\item \mbox{[} \mbox{]} Add UML diagrams for design validation and communication ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md36}{}\doxysubsection{\texorpdfstring{Security \& Stability}{Security \& Stability}}\label{md_enhancementChecklist_autotoc_md36}
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Add input sanitization for course input data ~\newline
+
+\item \mbox{[}x\mbox{]} Catch malformed CSV input and handle gracefully ~\newline
+
+\item \mbox{[}x\mbox{]} Implement file validation and format checking ~\newline
+
+\item \mbox{[}X\mbox{]} Add error logging class to write to file ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md37}{}\doxysubsection{\texorpdfstring{Professional Practices}{Professional Practices}}\label{md_enhancementChecklist_autotoc_md37}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Document design rationale and class responsibilities ~\newline
+
+\item \mbox{[} \mbox{]} Justify architectural trade-\/offs and pattern choices ~\newline
+
+\item \mbox{[} \mbox{]} Ensure maintainability and scalability are demonstrated
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_enhancementChecklist_autotoc_md39}{}\doxysection{\texorpdfstring{Category Two\+: Algorithms \& Data Structures}{Category Two: Algorithms \& Data Structures}}\label{md_enhancementChecklist_autotoc_md39}
+\hypertarget{md_enhancementChecklist_autotoc_md40}{}\doxysubsection{\texorpdfstring{Algorithm Implementation}{Algorithm Implementation}}\label{md_enhancementChecklist_autotoc_md40}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Implement multiple sorting algorithms\+:
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Bubble Sort (refactored)
+\item \mbox{[} \mbox{]} Merge Sort
+\item \mbox{[} \mbox{]} Quick Sort
+\item \mbox{[} \mbox{]} Insertion Sort \texorpdfstring{$\ast$}{*}(optional)\texorpdfstring{$\ast$}{*}
+\item \mbox{[} \mbox{]} Bucket Sort \texorpdfstring{$\ast$}{*}(optional)\texorpdfstring{$\ast$}{*}
+\item \mbox{[} \mbox{]} Radix Sort \texorpdfstring{$\ast$}{*}(optional)\texorpdfstring{$\ast$}{*}
+\end{DoxyItemize}
+\item \mbox{[} \mbox{]} Add abstraction layer\+: base {\ttfamily \doxylink{classSorter}{Sorter}} class with polymorphism ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md41}{}\doxysubsection{\texorpdfstring{Performance \& Benchmarking}{Performance \& Benchmarking}}\label{md_enhancementChecklist_autotoc_md41}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Add benchmarking module\+:
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Record execution time in milliseconds ~\newline
+
+\item \mbox{[} \mbox{]} Compare runtime across algorithms ~\newline
+
+\item \mbox{[} \mbox{]} Generate formatted summary report ~\newline
+
+\end{DoxyItemize}
+\item \mbox{[} \mbox{]} Analyze time and space complexity for each algorithm ~\newline
+
+\item \mbox{[} \mbox{]} Document O-\/complexity (best, average, worst case) ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md42}{}\doxysubsection{\texorpdfstring{Data Management}{Data Management}}\label{md_enhancementChecklist_autotoc_md42}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Move all course data into a vector for dynamic resizing ~\newline
+
+\item \mbox{[} \mbox{]} Maintain consistent data handling between algorithms ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md43}{}\doxysubsection{\texorpdfstring{Documentation}{Documentation}}\label{md_enhancementChecklist_autotoc_md43}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Include Markdown reports on algorithm performance and use cases ~\newline
+
+\item \mbox{[} \mbox{]} Clearly explain algorithm choice and trade-\/offs ~\newline
+
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_enhancementChecklist_autotoc_md45}{}\doxysection{\texorpdfstring{Category Three\+: Databases}{Category Three: Databases}}\label{md_enhancementChecklist_autotoc_md45}
+\hypertarget{md_enhancementChecklist_autotoc_md46}{}\doxysubsection{\texorpdfstring{Transition to Database}{Transition to Database}}\label{md_enhancementChecklist_autotoc_md46}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Replace CSV with a SQLite relational database ~\newline
+
+\item \mbox{[} \mbox{]} Define relational schema with constraints\+:
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} {\ttfamily course\+ID} as {\ttfamily PRIMARY KEY}
+\item \mbox{[} \mbox{]} {\ttfamily course\+Name} as {\ttfamily NOT NULL}
+\end{DoxyItemize}
+\item \mbox{[} \mbox{]} Parameterize all SQL queries (prevent injection attacks) ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md47}{}\doxysubsection{\texorpdfstring{CRUD Implementation}{CRUD Implementation}}\label{md_enhancementChecklist_autotoc_md47}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Implement full CRUD operations\+:
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} {\ttfamily add\+Course()}
+\item \mbox{[} \mbox{]} {\ttfamily remove\+Course()}
+\item \mbox{[} \mbox{]} {\ttfamily update\+Course()}
+\item \mbox{[} \mbox{]} {\ttfamily fetch\+All\+Courses()}
+\item \mbox{[} \mbox{]} {\ttfamily search\+Course\+By\+Id()}
+\item \mbox{[} \mbox{]} {\ttfamily search\+Course\+By\+Name()}
+\end{DoxyItemize}
+\item \mbox{[} \mbox{]} Integrate CRUD into the {\ttfamily \doxylink{classCourseManager}{Course\+Manager}} class ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md48}{}\doxysubsection{\texorpdfstring{Database Management}{Database Management}}\label{md_enhancementChecklist_autotoc_md48}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Add database connection and disconnection handling ~\newline
+
+\item \mbox{[} \mbox{]} Log all user actions into separate log files ~\newline
+
+\item \mbox{[} \mbox{]} Include schema creation on first connection ~\newline
+
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md49}{}\doxysubsection{\texorpdfstring{User Interface / Interaction}{User Interface / Interaction}}\label{md_enhancementChecklist_autotoc_md49}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Add user menu options\+:
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} “\+Load Courses”
+\item \mbox{[} \mbox{]} “\+Add Course”
+\item \mbox{[} \mbox{]} “\+Delete Course”
+\item \mbox{[} \mbox{]} “\+Display Course”
+\item \mbox{[} \mbox{]} “\+Export Sorted Courses” ~\newline
+
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_enhancementChecklist_autotoc_md50}{}\doxysubsection{\texorpdfstring{Security \& Design}{Security \& Design}}\label{md_enhancementChecklist_autotoc_md50}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Enforce unique course IDs ~\newline
+
+\item \mbox{[} \mbox{]} Use parameterized queries for injection prevention ~\newline
+
+\item \mbox{[} \mbox{]} Separate SQL logic from main application logic (data access layer abstraction) ~\newline
+
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_enhancementChecklist_autotoc_md52}{}\doxysection{\texorpdfstring{e\+Portfolio / Professional Demonstration}{ePortfolio / Professional Demonstration}}\label{md_enhancementChecklist_autotoc_md52}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Document reasoning for each enhancement (design, performance, or security-\/based) ~\newline
+
+\item \mbox{[} \mbox{]} Include diagrams and pseudocode for professional presentation ~\newline
+
+\item \mbox{[} \mbox{]} Reflect on design decisions and trade-\/offs ~\newline
+
+\item \mbox{[} \mbox{]} Present algorithm performance results in visual/graph form ~\newline
+
+\item \mbox{[} \mbox{]} Include a short self-\/assessment explaining development growth ~\newline
+
+\item \mbox{[} \mbox{]} Ensure Git\+Hub Pages portfolio clearly links to all artifacts ~\newline
+
+\item \mbox{[} \mbox{]} Maintain project with public access for employer review ~\newline
+
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ 

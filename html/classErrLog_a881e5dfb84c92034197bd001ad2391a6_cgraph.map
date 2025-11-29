@@ -1,0 +1,5 @@
+<map id="ErrLog::genLogFile" name="ErrLog::genLogFile">
+<area shape="rect" id="Node000001" title="Generates a log text file in the logs folder." alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000002" href="$classErrLog.html#af7345266274741d05394ccb688e228ad" title="generates a timestamp for files" alt="" coords="195,5,365,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,15,181,15,181,21,147,21"/>
+</map>

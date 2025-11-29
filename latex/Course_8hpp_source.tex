@@ -1,0 +1,61 @@
+\doxysection{Course.\+hpp}
+\hypertarget{Course_8hpp_source}{}\label{Course_8hpp_source}\index{include/CourseManagement/Course.hpp@{include/CourseManagement/Course.hpp}}
+\mbox{\hyperlink{Course_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COURSE\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COURSE\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceCourseData}{CourseData}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCourseData_1_1Course}{Course}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{classCourseData_1_1Course_a42ed0b46572cf4a3b5055505b5b3a869}{Course}}(}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ t\_id,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ t\_title,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\&\ t\_reqs\ =\ \{\}}
+\DoxyCodeLine{00014\ \ \ \ \ );}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classCourseData_1_1Course_a42ed0b46572cf4a3b5055505b5b3a869}{Course}}()}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classCourseData_1_1Course_a249fd8c4f3b378538d54cfd14afd1ea3}{m\_id}}(\textcolor{stringliteral}{"{}"{}}),}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCourseData_1_1Course_a7a078800ff04468f7d7b80a0b460fbb4}{m\_title}}(\textcolor{stringliteral}{"{}"{}}),}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCourseData_1_1Course_a877787e91b4c699814af491a2e5dbe4c}{m\_prereqs}}(\{\})}
+\DoxyCodeLine{00020\ \ \ \ \ \{\}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Sets\ Course\ object's\ ID}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCourseData_1_1Course_ae5d00bf608eaff62a12c9ddbb0b665be}{setCourseID}}(\textcolor{keyword}{const}\ std::string\&\ t\_set);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Gets\ Object's\ course\ ID}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classCourseData_1_1Course_aaa75b74aed897265dd58f95b0c411c53}{getCourseID}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Sets\ the\ course\ object's\ title}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCourseData_1_1Course_ab88ad352872cb60569659bc31aeac469}{setCourseTitle}}(\textcolor{keyword}{const}\ std::string\&\ t\_title);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Gets\ the\ course\ object's\ title}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classCourseData_1_1Course_a03874cb68bcdafa4fdd2096027738ac8}{getCourseTitle}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Gets\ the\ course\ object's\ preReqs\ vector}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\&\ \mbox{\hyperlink{classCourseData_1_1Course_a4e6e57b3cdc1c0d7ab95dfd81ab8d915}{getCoursePrerequisites}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ adds\ the\ preReq\ to\ a\ course\ object}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCourseData_1_1Course_a811af224af4473b820540c49db55f6f8}{addCoursePrerequisite}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCourse}{Course}}\&\ t\_newPreReq);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ removes\ preReq\ to\ a\ course\ object\ given\ its\ course}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCourseData_1_1Course_a09aec09a5209f4b7a0bd8e9651efa38b}{removeCoursePrerequisites}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCourseData_1_1Course}{Course}}\&\ t\_oldPreReq);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ removes\ the\ preReq\ given\ the\ course\ object's\ string}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCourseData_1_1Course_a09aec09a5209f4b7a0bd8e9651efa38b}{removeCoursePrerequisites}}(\textcolor{keyword}{const}\ std::string\&\ t\_oldPreReq);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ std::string\ \mbox{\hyperlink{classCourseData_1_1Course_a249fd8c4f3b378538d54cfd14afd1ea3}{m\_id}};}
+\DoxyCodeLine{00045\ \ \ \ \ std::string\ \mbox{\hyperlink{classCourseData_1_1Course_a7a078800ff04468f7d7b80a0b460fbb4}{m\_title}};}
+\DoxyCodeLine{00046\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classCourseData_1_1Course_a877787e91b4c699814af491a2e5dbe4c}{m\_prereqs}};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COURSE\_HPP}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00054\ \textcolor{comment}{https://cplusplus.com/forum/beginner/4915/}}
+\DoxyCodeLine{00055\ \textcolor{comment}{*/}}
+
+\end{DoxyCode}

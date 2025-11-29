@@ -39,6 +39,10 @@ public:
     bool removeCoursePrerequisites(const Course& t_oldPreReq);
     // removes the preReq given the course object's string
     bool removeCoursePrerequisites(const std::string& t_oldPreReq);
+    // Sets the WHOLE preReq given a vector of strings
+    void setCoursePrerequisites(
+        const std::vector<std::string>& t_NewPreReqs
+    );
 
 private:
     std::string m_id;

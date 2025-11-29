@@ -1,0 +1,36 @@
+\doxysection{src/\+Validation\+Tools/\+Validator.cpp File Reference}
+\hypertarget{Validator_8cpp}{}\label{Validator_8cpp}\index{src/ValidationTools/Validator.cpp@{src/ValidationTools/Validator.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include "{}Course\+Management/\+Course.\+hpp"{}}\newline
+{\ttfamily \#include "{}Validation\+Tools/\+Err.\+hpp"{}}\newline
+Include dependency graph for Validator.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Validator_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceVarLoader}{Var\+Loader}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceVarLoader_abd49e6ee2c902e65b2d7f196b7c4f435}{Var\+Loader\+::parse\+Line}} (const std\+::string \&t\+\_\+line, std\+::string \&t\+\_\+id, std\+::string \&t\+\_\+title, std\+::vector$<$ std\+::string $>$ \&t\+\_\+raw\+Prereqs)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \mbox{\hyperlink{namespaceVarLoader_ac05c3669519ffaa45aa1fd78f01aa4d7}{Var\+Loader\+::mount\+CSV}} (const std\+::string \&t\+\_\+csv\+Path)
+\begin{DoxyCompactList}\small\item\em Takes a CSV and parses it to resolve them into course objects. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceVarLoader_ad2f9faaa736bace31d2f5830ff18c411}{Var\+Loader\+::get\+Int\+From\+Cin}} ()
+\begin{DoxyCompactList}\small\item\em Safely takes an integer from a user, preventing buffer overflows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classErrLog}{Err\+Log}} \mbox{\hyperlink{namespaceVarLoader_afa43b5ba74adaf744f3f927c9fbe605d}{Var\+Loader\+::err}}
+\end{DoxyCompactItemize}

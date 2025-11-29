@@ -1,0 +1,423 @@
+\chapter{Style}
+\hypertarget{md_03-Style}{}\label{md_03-Style}\index{Style@{Style}}
+\label{md_03-Style_autotoc_md0}%
+\Hypertarget{md_03-Style_autotoc_md0}%
+ Consistency is the most important aspect of style. The second most important aspect is following a style that the average C++ programmer is used to reading.
+
+C++ allows for arbitrary-\/length identifier names, so there\textquotesingle{}s no reason to be terse when naming things. Use descriptive names, and be consistent in the style.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Camel\+Case}
+\item {\ttfamily snake\+\_\+case}
+\end{DoxyItemize}
+
+are common examples. {\itshape snake\+\_\+case} has the advantage that it can also work with spell checkers, if desired.\hypertarget{md_03-Style_autotoc_md1}{}\doxysection{\texorpdfstring{Establishing A Style Guideline}{Establishing A Style Guideline}}\label{md_03-Style_autotoc_md1}
+Whatever style guidelines you establish, be sure to implement a {\ttfamily .clang-\/format} file that specifies the style you expect. While this cannot help with naming, it is particularly important for an open source project to maintain a consistent style.
+
+Every IDE and many editors have support for clang-\/format built in or easily installable with an add-\/in.
+
+
+\begin{DoxyItemize}
+\item VSCode\+: \href{https://github.com/Microsoft/vscode-cpptools}{\texttt{ Microsoft C/\+C++ extension for VS Code}}
+\item CLion\+: \href{https://www.jetbrains.com/help/clion/clangformat-as-alternative-formatter.html}{\texttt{ https\+://www.\+jetbrains.\+com/help/clion/clangformat-\/as-\/alternative-\/formatter.\+html}}
+\item Visual\+Studio \href{https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat\#review-details}{\texttt{ https\+://marketplace.\+visualstudio.\+com/items?item\+Name=\+LLVMExtensions.\+Clang\+Format\#review-\/details}}
+\item Resharper++\+: \href{https://www.jetbrains.com/help/resharper/2017.2/Using_Clang_Format.html}{\texttt{ https\+://www.\+jetbrains.\+com/help/resharper/2017.\+2/\+Using\+\_\+\+Clang\+\_\+\+Format.\+html}}
+\item Vim
+\begin{DoxyItemize}
+\item \href{https://github.com/rhysd/vim-clang-format}{\texttt{ https\+://github.\+com/rhysd/vim-\/clang-\/format}}
+\item \href{https://github.com/chiel92/vim-autoformat}{\texttt{ https\+://github.\+com/chiel92/vim-\/autoformat}}
+\end{DoxyItemize}
+\item XCode\+: \href{https://github.com/travisjeffery/ClangFormat-Xcode}{\texttt{ https\+://github.\+com/travisjeffery/\+Clang\+Format-\/\+Xcode}}
+\end{DoxyItemize}\hypertarget{md_03-Style_autotoc_md2}{}\doxysection{\texorpdfstring{Common C++ Naming Conventions}{Common C++ Naming Conventions}}\label{md_03-Style_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Types start with upper case\+: {\ttfamily My\+Class}.
+\item Functions and variables start with lower case\+: {\ttfamily my\+Method}.
+\item Constants are all upper case\+: {\ttfamily const double PI=3.\+14159265358979323;}.
+\end{DoxyItemize}
+
+C++ Standard Library (and other well-\/known C++ libraries like \href{http://www.boost.org/}{\texttt{ Boost}}) use these guidelines\+:
+
+
+\begin{DoxyItemize}
+\item Macro names use upper case with underscores\+: {\ttfamily INT\+\_\+\+MAX}.
+\item Template parameter names use Pascal case\+: {\ttfamily Input\+Iterator}.
+\item All other names use snake case\+: {\ttfamily unordered\+\_\+map}.
+\end{DoxyItemize}\hypertarget{md_03-Style_autotoc_md3}{}\doxysection{\texorpdfstring{Distinguish Private Object Data}{Distinguish Private Object Data}}\label{md_03-Style_autotoc_md3}
+Name private data with a {\ttfamily m\+\_\+} prefix to distinguish it from public data. {\ttfamily m\+\_\+} stands for "{}member"{} data.\hypertarget{md_03-Style_autotoc_md4}{}\doxysection{\texorpdfstring{Distinguish Function Parameters}{Distinguish Function Parameters}}\label{md_03-Style_autotoc_md4}
+The most important thing is consistency within your codebase; this is one possibility to help with consistency.
+
+Name function parameters with an {\ttfamily t\+\_\+} prefix. {\ttfamily t\+\_\+} can be thought of as "{}the"{}, but the meaning is arbitrary. The point is to distinguish function parameters from other variables in scope while giving us a consistent naming strategy.
+
+Any prefix or postfix can be chosen for your organization. This is just one example. {\itshape This suggestion is controversial, for a discussion about it see issue \href{https://github.com/lefticus/cppbestpractices/issues/11}{\texttt{ \#11}}.}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }Size}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ Size(\textcolor{keywordtype}{int}\ t\_width,\ \textcolor{keywordtype}{int}\ t\_height)\ :\ width(t\_width),\ height(t\_height)\ \{\}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ This\ version\ might\ make\ sense\ for\ thread\ safety\ or\ something,}}
+\DoxyCodeLine{\textcolor{comment}{//\ but\ more\ to\ the\ point,\ sometimes\ we\ need\ to\ hide\ data,\ sometimes\ we\ don't.}}
+\DoxyCodeLine{\textcolor{keyword}{class\ }PrivateSize}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ width()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_width;\ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ height()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_height;\ \}}
+\DoxyCodeLine{\ \ \ \ PrivateSize(\textcolor{keywordtype}{int}\ t\_width,\ \textcolor{keywordtype}{int}\ t\_height)\ :\ m\_width(t\_width),\ m\_height(t\_height)\ \{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ m\_width;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ m\_height;}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_03-Style_autotoc_md5}{}\doxysection{\texorpdfstring{Don\textquotesingle{}t Name Anything Starting With $<$tt$>$\+\_\+$<$/tt$>$}{Don't Name Anything Starting With <tt>\_</tt>}}\label{md_03-Style_autotoc_md5}
+If you do, you risk colliding with names reserved for compiler and standard library implementation use\+:
+
+\href{http://stackoverflow.com/questions/228783/what-are-the-rules-about-using-an-underscore-in-a-c-identifier}{\texttt{ http\+://stackoverflow.\+com/questions/228783/what-\/are-\/the-\/rules-\/about-\/using-\/an-\/underscore-\/in-\/a-\/c-\/identifier}}\hypertarget{md_03-Style_autotoc_md6}{}\doxysection{\texorpdfstring{Well-\/\+Formed Example}{Well-Formed Example}}\label{md_03-Style_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ MyClass(\textcolor{keywordtype}{int}\ t\_data)}
+\DoxyCodeLine{\ \ \ \ :\ m\_data(t\_data)}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ getData()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ m\_data;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ m\_data;}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_03-Style_autotoc_md7}{}\doxysection{\texorpdfstring{Enable Out-\/of-\/\+Source-\/\+Directory Builds}{Enable Out-of-Source-Directory Builds}}\label{md_03-Style_autotoc_md7}
+Make sure generated files go into an output folder that is separate from the source folder.\hypertarget{md_03-Style_autotoc_md8}{}\doxysection{\texorpdfstring{Use $<$tt$>$nullptr$<$/tt$>$}{Use <tt>nullptr</tt>}}\label{md_03-Style_autotoc_md8}
+C++11 introduces {\ttfamily nullptr} which is a special value denoting a null pointer. This should be used instead of {\ttfamily 0} or {\ttfamily NULL} to indicate a null pointer.\hypertarget{md_03-Style_autotoc_md9}{}\doxysection{\texorpdfstring{Comments}{Comments}}\label{md_03-Style_autotoc_md9}
+Comment blocks should use {\ttfamily //}, not {\ttfamily /\texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}/}. Using {\ttfamily //} makes it much easier to comment out a block of code while debugging.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ this\ function\ does\ something}}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ myFunc()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+To comment out this function block during debugging we might do\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{//\ this\ function\ does\ something}}
+\DoxyCodeLine{\textcolor{comment}{int\ myFunc()}}
+\DoxyCodeLine{\textcolor{comment}{\{}}
+\DoxyCodeLine{\textcolor{comment}{\}}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+
+\end{DoxyCode}
+
+
+which would be impossible if the function comment header used {\ttfamily /\texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}/}.\hypertarget{md_03-Style_autotoc_md10}{}\doxysection{\texorpdfstring{Never Use $<$tt$>$using namespace$<$/tt$>$ in a Header File}{Never Use <tt>using namespace</tt> in a Header File}}\label{md_03-Style_autotoc_md10}
+This causes the namespace you are {\ttfamily using} to be pulled into the namespace of all files that include the header file. It pollutes the namespace and it may lead to name collisions in the future. Writing {\ttfamily using namespace} in an implementation file is fine though.\hypertarget{md_03-Style_autotoc_md11}{}\doxysection{\texorpdfstring{Include Guards}{Include Guards}}\label{md_03-Style_autotoc_md11}
+Header files must contain a distinctly-\/named include guard to avoid problems with including the same header multiple times and to prevent conflicts with headers from other projects.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ MYPROJECT\_MYCLASS\_HPP}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ MYPROJECT\_MYCLASS\_HPP}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }MyProject\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{class\ }MyClass\ \{}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
+
+
+You may also consider using the {\ttfamily \#pragma once} directive instead which is quasi-\/standard across many compilers. It\textquotesingle{}s short and makes the intent clear.\hypertarget{md_03-Style_autotoc_md12}{}\doxysection{\texorpdfstring{\{\} Are Required for Blocks.}{\{\} Are Required for Blocks.}}\label{md_03-Style_autotoc_md12}
+Leaving them off can lead to semantic errors in the code.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Bad\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ This\ compiles\ and\ does\ what\ you\ want,\ but\ can\ lead\ to\ confusing}}
+\DoxyCodeLine{\textcolor{comment}{//\ errors\ if\ modification\ are\ made\ in\ the\ future\ and\ close\ attention}}
+\DoxyCodeLine{\textcolor{comment}{//\ is\ not\ paid.}}
+\DoxyCodeLine{\textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 15;\ ++i)}
+\DoxyCodeLine{\ \ std::cout\ <<\ i\ <<\ std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Bad\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ The\ cout\ is\ not\ part\ of\ the\ loop\ in\ this\ case\ even\ though\ it\ appears\ to\ be.}}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ sum\ =\ 0;}
+\DoxyCodeLine{\textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 15;\ ++i)}
+\DoxyCodeLine{\ \ ++sum;}
+\DoxyCodeLine{\ \ std::cout\ <<\ i\ <<\ std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Good\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ It's\ clear\ which\ statements\ are\ part\ of\ the\ loop\ (or\ if\ block,\ or\ whatever).}}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ sum\ =\ 0;}
+\DoxyCodeLine{\textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 15;\ ++i)\ \{}
+\DoxyCodeLine{\ \ ++sum;}
+\DoxyCodeLine{\ \ std::cout\ <<\ i\ <<\ std::endl;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_03-Style_autotoc_md13}{}\doxysection{\texorpdfstring{Keep Lines a Reasonable Length}{Keep Lines a Reasonable Length}}\label{md_03-Style_autotoc_md13}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Bad\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ hard\ to\ follow}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (x\ \&\&\ y\ \&\&\ myFunctionThatReturnsBool()\ \&\&\ caseNumber3\ \&\&\ (15\ >\ 12\ ||\ 2\ <\ 3))\ \{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Good\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ Logical\ grouping,\ easier\ to\ read}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (x\ \&\&\ y\ \&\&\ myFunctionThatReturnsBool()}
+\DoxyCodeLine{\ \ \ \ \&\&\ caseNumber3}
+\DoxyCodeLine{\ \ \ \ \&\&\ (15\ >\ 12\ ||\ 2\ <\ 3))\ \{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Many projects and coding standards have a soft guideline that one should try to use less than about 80 or 100 characters per line. Such code is generally easier to read. It also makes it possible to have two separate files next to each other on one screen without having a tiny font.\hypertarget{md_03-Style_autotoc_md14}{}\doxysection{\texorpdfstring{Use "{}"{} for Including Local Files}{Use "" for Including Local Files}}\label{md_03-Style_autotoc_md14}
+... {\ttfamily \texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}} is \href{http://blog2.emptycrate.com/content/when-use-include-verses-include}{\texttt{ reserved for system includes}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Bad\ Idea.\ Requires\ extra\ -\/I\ directives\ to\ the\ compiler}}
+\DoxyCodeLine{\textcolor{comment}{//\ and\ goes\ against\ standards.}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <includes/MyHeader.hpp>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Worse\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ Requires\ potentially\ even\ more\ specific\ -\/I\ directives\ and}}
+\DoxyCodeLine{\textcolor{comment}{//\ makes\ code\ more\ difficult\ to\ package\ and\ distribute.}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <MyHeader.hpp>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Good\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ Requires\ no\ extra\ params\ and\ notifies\ the\ user\ that\ the\ file}}
+\DoxyCodeLine{\textcolor{comment}{//\ is\ a\ local\ file.}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}MyHeader.hpp"{}}}
+
+\end{DoxyCode}
+\hypertarget{md_03-Style_autotoc_md15}{}\doxysection{\texorpdfstring{Initialize Member Variables}{Initialize Member Variables}}\label{md_03-Style_autotoc_md15}
+...with the member initializer list.
+
+For POD types, the performance of an initializer list is the same as manual initialization, but for other types there is a clear performance gain, see below.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Bad\ Idea}}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ MyClass(\textcolor{keywordtype}{int}\ t\_value)}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ m\_value\ =\ t\_value;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ m\_value;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Bad\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ This\ leads\ to\ an\ additional\ constructor\ call\ for\ m\_myOtherClass}}
+\DoxyCodeLine{\textcolor{comment}{//\ before\ the\ assignment.}}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ MyClass(MyOtherClass\ t\_myOtherClass)}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ m\_myOtherClass\ =\ t\_myOtherClass;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ MyOtherClass\ m\_myOtherClass;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Good\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ There\ is\ no\ performance\ gain\ here\ but\ the\ code\ is\ cleaner.}}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ MyClass(\textcolor{keywordtype}{int}\ t\_value)}
+\DoxyCodeLine{\ \ \ \ :\ m\_value(t\_value)}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ m\_value;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Good\ Idea}}
+\DoxyCodeLine{\textcolor{comment}{//\ The\ default\ constructor\ for\ m\_myOtherClass\ is\ never\ called\ here,\ so}}
+\DoxyCodeLine{\textcolor{comment}{//\ there\ is\ a\ performance\ gain\ if\ MyOtherClass\ is\ not\ is\_trivially\_default\_constructible.}}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ MyClass(MyOtherClass\ t\_myOtherClass)}
+\DoxyCodeLine{\ \ \ \ :\ m\_myOtherClass(t\_myOtherClass)}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ MyOtherClass\ m\_myOtherClass;}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+In C++11 you can assign default values to each member (using {\ttfamily =} or using {\ttfamily \{\}}).\hypertarget{md_03-Style_autotoc_md16}{}\doxysubsection{\texorpdfstring{Assigning default values with =}{Assigning default values with =}}\label{md_03-Style_autotoc_md16}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ ...\ //}}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ m\_value\ =\ 0;\ \textcolor{comment}{//\ allowed}}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{unsigned}\ m\_value\_2\ =\ -\/1;\ \textcolor{comment}{//\ narrowing\ from\ signed\ to\ unsigned\ allowed}}
+\DoxyCodeLine{\textcolor{comment}{//\ ...\ //}}
+
+\end{DoxyCode}
+ This ensures that no constructor ever "{}forgets"{} to initialize a member object.\hypertarget{md_03-Style_autotoc_md17}{}\doxysubsection{\texorpdfstring{Assigning default values with brace initialization}{Assigning default values with brace initialization}}\label{md_03-Style_autotoc_md17}
+Using brace initialization does not allow narrowing at compile-\/time.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Best\ Idea}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ ...\ //}}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ m\_value\{\ 0\ \};\ \textcolor{comment}{//\ allowed}}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{unsigned}\ m\_value\_2\ \{\ -\/1\ \};\ \textcolor{comment}{//\ narrowing\ from\ signed\ to\ unsigned\ not\ allowed,\ leads\ to\ a\ compile\ time\ error}}
+\DoxyCodeLine{\textcolor{comment}{//\ ...\ //}}
+
+\end{DoxyCode}
+
+
+Prefer {\ttfamily \{\}} initialization over {\ttfamily =} unless you have a strong reason not to.
+
+Forgetting to initialize a member is a source of undefined behavior bugs which are often extremely hard to find.
+
+If the member variable is not expected to change after the initialization, then mark it {\ttfamily const}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ MyClass(\textcolor{keywordtype}{int}\ t\_value)}
+\DoxyCodeLine{\ \ \ \ :\ m\_value\{t\_value\}}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ m\_value\{0\};}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+Since a const member variable cannot be assigned a new value, such a class may not have a meaningful copy assignment operator.\hypertarget{md_03-Style_autotoc_md18}{}\doxysection{\texorpdfstring{Always Use Namespaces}{Always Use Namespaces}}\label{md_03-Style_autotoc_md18}
+There is almost never a reason to declare an identifier in the global namespace. Instead, functions and classes should exist in an appropriately named namespace or in a class inside of a namespace. Identifiers which are placed in the global namespace risk conflicting with identifiers from other libraries (mostly \doxylink{classC}{C}, which doesn\textquotesingle{}t have namespaces).\hypertarget{md_03-Style_autotoc_md19}{}\doxysection{\texorpdfstring{Use the Correct Integer Type for Standard Library Features}{Use the Correct Integer Type for Standard Library Features}}\label{md_03-Style_autotoc_md19}
+The standard library generally uses {\ttfamily std\+::size\+\_\+t} for anything related to size. The size of {\ttfamily size\+\_\+t} is implementation defined.
+
+In general, using {\ttfamily auto} will avoid most of these issues, but not all.
+
+Make sure you stick with the correct integer types and remain consistent with the C++ standard library. It might not warn on the platform you are currently using, but it probably will when you change platforms.
+
+{\itshape Note that you can cause integer underflow when performing some operations on unsigned values. For example\+:}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::vector<int>\ v1\{2,3,4,5,6,7,8,9\};}
+\DoxyCodeLine{std::vector<int>\ v2\{9,8,7,6,5,4,3,2,1\};}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ s1\ =\ v1.size();}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ s2\ =\ v2.size();}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ diff\ =\ s1\ -\/\ s2;\ \textcolor{comment}{//\ diff\ underflows\ to\ a\ very\ large\ number}}
+
+\end{DoxyCode}
+\hypertarget{md_03-Style_autotoc_md20}{}\doxysection{\texorpdfstring{Use .\+hpp and .\+cpp for Your File Extensions}{Use .hpp and .cpp for Your File Extensions}}\label{md_03-Style_autotoc_md20}
+Ultimately this is a matter of preference, but .hpp and .cpp are widely recognized by various editors and tools. So the choice is pragmatic. Specifically, Visual Studio only automatically recognizes .cpp and .cxx for C++ files, and Vim doesn\textquotesingle{}t necessarily recognize .cc as a C++ file.
+
+One particularly large project (\href{https://github.com/NREL/OpenStudio}{\texttt{ Open\+Studio}}) uses .hpp and .cpp for user-\/generated files and .hxx and .cxx for tool-\/generated files. Both are well recognized and having the distinction is helpful.\hypertarget{md_03-Style_autotoc_md21}{}\doxysection{\texorpdfstring{Never Mix Tabs and Spaces}{Never Mix Tabs and Spaces}}\label{md_03-Style_autotoc_md21}
+Some editors like to indent with a mixture of tabs and spaces by default. This makes the code unreadable to anyone not using the exact same tab indentation settings. Configure your editor so this does not happen.\hypertarget{md_03-Style_autotoc_md22}{}\doxysection{\texorpdfstring{Never Put Code with Side Effects Inside an assert()}{Never Put Code with Side Effects Inside an assert()}}\label{md_03-Style_autotoc_md22}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{assert(registerSomeThing());\ \textcolor{comment}{//\ make\ sure\ that\ registerSomeThing()\ returns\ true}}
+
+\end{DoxyCode}
+
+
+The above code succeeds when making a debug build, but gets removed by the compiler when making a release build, giving you different behavior between debug and release builds. This is because {\ttfamily assert()} is a macro which expands to nothing in release mode.\hypertarget{md_03-Style_autotoc_md23}{}\doxysection{\texorpdfstring{Don\textquotesingle{}t Be Afraid of Templates}{Don't Be Afraid of Templates}}\label{md_03-Style_autotoc_md23}
+They can help you stick to \href{http://en.wikipedia.org/wiki/Don\%27t_repeat_yourself}{\texttt{ DRY principles}}. They should be preferred to macros, because macros do not honor namespaces, etc.\hypertarget{md_03-Style_autotoc_md24}{}\doxysection{\texorpdfstring{Use Operator Overloads Judiciously}{Use Operator Overloads Judiciously}}\label{md_03-Style_autotoc_md24}
+Operator overloading was invented to enable expressive syntax. Expressive in the sense that adding two big integers looks like {\ttfamily a + b} and not {\ttfamily a.\+add(b)}. Another common example is {\ttfamily std\+::string}, where it is very common to concatenate two strings with {\ttfamily string1 + string2}.
+
+However, you can easily create unreadable expressions using too much or wrong operator overloading. When overloading operators, there are three basic rules to follow as described \href{http://stackoverflow.com/questions/4421706/operator-overloading/4421708\#4421708}{\texttt{ on stackoverflow}}.
+
+Specifically, you should keep these things in mind\+:
+
+
+\begin{DoxyItemize}
+\item Overloading {\ttfamily operator=()} when handling resources is a must. See \href{03-Style.md\#consider-the-rule-of-zero}{\texttt{ Consider the Rule of Zero}} below.
+\item For all other operators, only overload them when they are used in a context that is commonly connected to these operators. Typical scenarios are concatenating things with +, negating expressions that can be considered "{}true"{} or "{}false"{}, etc.
+\item Always be aware of the \href{http://en.cppreference.com/w/cpp/language/operator_precedence}{\texttt{ operator precedence}} and try to circumvent unintuitive constructs.
+\item Do not overload exotic operators such as \texorpdfstring{$\sim$}{\string~} or \% unless implementing a numeric type or following a well recognized syntax in specific domain.
+\item \href{http://stackoverflow.com/questions/5602112/when-to-overload-the-comma-operator?answertab=votes\#tab-top}{\texttt{ Never}} overload {\ttfamily operator,()} (the comma operator).
+\item Use non-\/member functions {\ttfamily operator\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}()} and {\ttfamily operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}()} when dealing with streams. For example, you can overload {\ttfamily operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}(std\+::ostream \&, My\+Class const \&)} to enable "{}writing"{} your class into a stream, such as {\ttfamily std\+::cout} or an {\ttfamily std\+::fstream} or {\ttfamily std\+::stringstream}. The latter is often used to create a string representation of a value.
+\item There are more common operators to overload \href{http://stackoverflow.com/questions/4421706/operator-overloading?answertab=votes\#tab-top}{\texttt{ described here}}.
+\end{DoxyItemize}
+
+More tips regarding the implementation details of your custom operators can be found \href{http://courses.cms.caltech.edu/cs11/material/cpp/donnie/cpp-ops.html}{\texttt{ here}}.\hypertarget{md_03-Style_autotoc_md25}{}\doxysection{\texorpdfstring{Avoid Implicit Conversions}{Avoid Implicit Conversions}}\label{md_03-Style_autotoc_md25}
+\hypertarget{md_03-Style_autotoc_md26}{}\doxysubsection{\texorpdfstring{Single Parameter Constructors}{Single Parameter Constructors}}\label{md_03-Style_autotoc_md26}
+Single parameter constructors can be applied at compile time to automatically convert between types. This is handy for things like {\ttfamily std\+::string(const char \texorpdfstring{$\ast$}{*})} but should be avoided in general because they can add to accidental runtime overhead.
+
+Instead mark single parameter constructors as {\ttfamily explicit}, which requires them to be explicitly called.\hypertarget{md_03-Style_autotoc_md27}{}\doxysubsection{\texorpdfstring{Conversion Operators}{Conversion Operators}}\label{md_03-Style_autotoc_md27}
+Similarly to single parameter constructors, conversion operators can be called by the compiler and introduce unexpected overhead. They should also be marked as {\ttfamily explicit}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//bad\ idea}}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }S\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{operator}\ int()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 2;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//good\ idea}}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }S\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{explicit}\ \textcolor{keyword}{operator}\ int()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 2;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{md_03-Style_autotoc_md28}{}\doxysection{\texorpdfstring{Consider the Rule of Zero}{Consider the Rule of Zero}}\label{md_03-Style_autotoc_md28}
+The Rule of Zero states that you do not provide any of the functions that the compiler can provide (copy constructor, copy assignment operator, move constructor, move assignment operator, destructor) unless the class you are constructing does some novel form of ownership.
+
+The goal is to let the compiler provide optimal versions that are automatically maintained when more member variables are added.
+
+\href{http://www.nirfriedman.com/2015/06/27/cpp-rule-of-zero/}{\texttt{ This article}} provides a background and explains techniques for implementing nearly 100\% of the time. 

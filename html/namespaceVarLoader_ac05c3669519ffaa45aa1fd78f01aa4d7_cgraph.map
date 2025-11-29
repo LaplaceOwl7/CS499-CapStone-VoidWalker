@@ -1,0 +1,9 @@
+<map id="VarLoader::mountCSV" name="VarLoader::mountCSV">
+<area shape="rect" id="Node000001" title="Takes a CSV and parses it to resolve them into course objects." alt="" coords="5,31,168,56"/>
+<area shape="rect" id="Node000002" href="$classErrLog.html#a881e5dfb84c92034197bd001ad2391a6" title="Generates a log text file in the logs folder." alt="" coords="225,5,366,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,31,211,26,211,31,169,36"/>
+<area shape="rect" id="Node000004" href="$namespaceVarLoader.html#abd49e6ee2c902e65b2d7f196b7c4f435" title=" " alt="" coords="216,55,375,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,50,203,54,202,59,168,55"/>
+<area shape="rect" id="Node000003" href="$classErrLog.html#af7345266274741d05394ccb688e228ad" title="generates a timestamp for files" alt="" coords="423,5,593,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,15,409,15,409,21,366,21"/>
+</map>

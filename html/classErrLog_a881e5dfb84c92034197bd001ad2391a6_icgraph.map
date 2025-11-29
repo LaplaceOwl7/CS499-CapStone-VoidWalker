@@ -1,0 +1,14 @@
+<map id="ErrLog::genLogFile" name="ErrLog::genLogFile">
+<area shape="rect" id="Node000001" title="Generates a log text file in the logs folder." alt="" coords="607,31,748,56"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="615,30,558,21,411,11,267,10,60,19,60,13,267,5,411,6,559,15,615,25"/>
+<area shape="rect" id="Node000003" href="$namespaceVarLoader.html#ac05c3669519ffaa45aa1fd78f01aa4d7" title="Takes a CSV and parses it to resolve them into course objects." alt="" coords="382,31,545,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="593,46,545,46,545,41,593,41"/>
+<area shape="rect" id="Node000005" href="$namespacesorter.html#ae4b450a6801a9b31bcdd3b4d15e0cae1" title=" " alt="" coords="368,80,559,105"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="609,62,520,83,519,77,608,57"/>
+<area shape="rect" id="Node000004" href="$classCourseManager.html#a822e86d0e530f3a2d9cbc1336de6c303" title="Loads master vector of Course objects into memory from a CSV file." alt="" coords="108,31,320,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="368,46,320,46,320,41,368,41"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="109,31,60,24,61,19,110,26"/>
+<area shape="rect" id="Node000006" href="$classSorter.html#a529cf055195450c48514dd4e546a8b78" title=" " alt="" coords="145,80,283,105"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="354,95,284,95,284,90,354,90"/>
+</map>

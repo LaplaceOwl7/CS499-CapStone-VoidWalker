@@ -1,0 +1,23 @@
+<map id="include/Sorters/QuickSort.hpp" name="include/Sorters/QuickSort.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,226,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,299,94,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,33,68,53,39,80,19,114,10,152,9,205,16,250,27,269,41,287,37,290,22,272,11,252,4,205,5,152,14,112,35,77,64,49,95,29"/>
+<area shape="rect" id="Node000003" href="$Sorter_8hpp.html" title=" " alt="" coords="49,79,188,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,31,112,65,107,65,109,31"/>
+<area shape="poly" id="edge10_Node000003_Node000001" title=" " alt="" coords="123,78,124,44,130,45,128,79"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="84,106,50,125,35,138,23,153,17,170,14,187,19,224,33,258,49,286,44,289,28,260,14,225,9,187,12,168,19,151,31,134,47,120,82,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="228,152,278,177"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="141,102,220,143,218,148,139,106"/>
+<area shape="rect" id="Node000005" href="$BubbleSort_8hpp.html" title=" " alt="" coords="33,152,204,177"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="121,104,121,138,116,138,116,104"/>
+<area shape="rect" id="Node000008" href="$MergeSort_8hpp.html" title=" " alt="" coords="303,152,470,177"/>
+<area shape="poly" id="edge11_Node000003_Node000008" title=" " alt="" coords="162,101,331,146,329,151,161,107"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="114,179,90,226,71,286,66,284,85,224,109,176"/>
+<area shape="rect" id="Node000006" href="$Course_8hpp.html" title=" " alt="" coords="100,225,331,251"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="136,175,190,215,187,219,132,180"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="192,253,101,295,99,290,190,248"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="186,299,245,324"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="218,251,218,285,213,285,213,251"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="387,178,374,215,362,236,345,253,302,272,239,288,108,308,107,303,238,283,300,267,342,248,357,232,369,213,381,176"/>
+<area shape="poly" id="edge13_Node000008_Node000006" title=" " alt="" coords="360,180,257,222,255,218,358,175"/>
+</map>

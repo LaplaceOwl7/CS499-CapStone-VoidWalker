@@ -18,6 +18,11 @@ add_executable(MyProject
     src/Sorters/MergeSort.cpp
     src/Sorters/Sorter.cpp
     src/Sorters/QuickSort.cpp
+    src/Sorters/Timer.cpp
+    src/FileManagement/Benchmarker.cpp
+    src/Database/DataManager.cpp
+    src/Database/User.cpp
+    src/Database/Recorder.cpp
 )
 
 # Add include folder
@@ -32,3 +37,7 @@ target_include_directories(MyProject PRIVATE
 
 configure_file(seedInput.csv seedInput.csv COPYONLY)
 
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set_property(TARGET MyProject PROPERTY RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+target_link_libraries(MyProject PRIVATE sqlite3)

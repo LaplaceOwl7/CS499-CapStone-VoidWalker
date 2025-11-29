@@ -1,31 +1,120 @@
-MATH201,Discrete Mathematics
-CSCI300,Introduction to Algorithms,CSCI200,MATH201
-CSCI350,Operating Systems,CSCI300
-CSCI101,Introduction to Programming in C++,CSCI100
-CSCI100,Introduction to Computer Science
-CSCI301,Advanced Programming in C++,CSCI101
-CSCI400,Large Software Development,CSCI301,CSCI350
-CSCI200,Data Structures,CSCI101
-PHY202,Quantum Physics,MATH201
-CHEM150,Organic Chemistry,CHEM100
-BIO101,Introduction to Biology
-ENG210,Shakespearean Literature
-ART150,Introduction to Visual Arts
-PSYCH301,Abnormal Psychology,PSYCH101
-SOC,Sociological Theories
-HIST400,Modern World History,HIST200
-ECON350,International Economics,ECON200
-MUSIC120,Music Appreciation
-PHIL220,Philosophy of Ethics,PHIL101
-LING101,Introduction to Linguistics
-GEOG300,Global Environmental Issues,GEOG200
-STAT250,Statistical Analysis
-FRENCH101,Elementary French
-SPANISH201,Intermediate Spanish,SPANISH101
-COMPUTERVISION401,Advanced Computer Vision,CSCI400
-ROBOTICS450,Introduction to Robotics,CSCI400
-CRYPTOGRAPHY320,Applied Cryptography,CSCI301
-GAMEDESIGN250,Game Design Fundamentals,CSCI101
-ASTROPHYSICS410,Stellar Astrophysics,PHY202
-LOLZ200, Cat Analysis, LOLZ0
-
+MATH201,DiscreteMathematics
+CSCI300,IntroductiontoAlgorithms,CSCI200,MATH201
+CSCI350,OperatingSystems,CSCI300
+CSCI101,IntroductiontoProgramminginC++,CSCI100
+CSCI100,IntroductiontoComputerScience
+CSCI301,AdvancedProgramminginC++,CSCI101
+CSCI400,LargeSoftwareDevelopment,CSCI301,CSCI350
+CSCI200,DataStructures,CSCI101
+PHY202,QuantumPhysics,MATH201
+CHEM150,OrganicChemistry,CHEM100
+CSCI480,CloudComputing,CSCI350
+CSCI490,CapstoneProject,CSCI400
+STAT101,IntroductiontoStatistics
+STAT310,ProbabilityTheory,MATH221
+STAT320,RegressionModels,STAT250
+STAT330,DesignofExperiments,STAT250
+STAT340,TimeSeriesAnalysis,STAT250
+STAT360,BayesianStatistics,STAT310
+PHY101,GeneralPhysicsI,MATH150
+PHY102,GeneralPhysicsII,PHY101
+PHY250,ClassicalMechanics,PHY102
+PHY260,Electromagnetism,PHY102
+PHY270,Thermodynamics,PHY102
+PHY310,NuclearPhysics,PHY202
+PHY350,AdvancedLaboratoryMethods,PHY102
+CHEM100,IntroductiontoChemistry
+CHEM130,InorganicChemistry,CHEM100
+CHEM250,PhysicalChemistryI,CHEM150,MATH221
+CHEM260,PhysicalChemistryII,CHEM250
+CHEM300,Biochemistry,CHEM150
+BIO150,CellBiology,BIO101
+BIO180,Genetics,BIO101
+BIO220,Microbiology,BIO101
+BIO250,Botany,BIO101
+BIO260,Ecology,BIO101
+BIO310,MolecularBiology,BIO180
+BIO350,HumanPhysiology,BIO101
+ENG101,EnglishComposition
+ENG150,TechnicalWriting,ENG101
+ENG220,WorldLiterature,ENG101
+ENG250,CreativeWritingI,ENG101
+ENG350,CreativeWritingII,ENG250
+HIST101,FoundationsofWorldHistory
+HIST150,AmericanHistoryI
+HIST160,AmericanHistoryII,HIST150
+HIST200,EuropeanHistory,HIST101
+HIST300,HistoryofScience,HIST101
+ECON101,Microeconomics
+ECON102,Macroeconomics
+ECON200,IntermediateEconomics,ECON101,ECON102
+ECON310,EconometricsI,STAT250,ECON200
+ECON320,EconometricsII,ECON310
+ECON330,DevelopmentEconomics,ECON200
+PHIL101,IntroductiontoPhilosophy
+PHIL210,LogicandCriticalThinking,PHIL101
+PHIL310,PhilosophyofScience,PHIL101
+PHIL330,Metaphysics,PHIL101
+PSYCH101,IntroductiontoPsychology
+PSYCH210,CognitivePsychology,PSYCH101
+PSYCH220,DevelopmentalPsychology,PSYCH101
+PSYCH240,SocialPsychology,PSYCH101
+PSYCH330,Neuropsychology,PSYCH101
+ART101,ArtHistoryI
+ART120,DrawingI,ART101
+ART220,DrawingII,ART120
+ART230,DigitalArtBasics,ART101
+ART310,ModernArt,ART101
+GEOG101,IntrotoGeography
+GEOG150,PhysicalGeography,GEOG101
+GEOG200,HumanGeography,GEOG101
+GEOG310,Climatology,GEOG200
+MUSIC101,FundamentalsofMusic
+MUSIC250,MusicTheoryII,MUSIC101
+MUSIC300,MusicComposition,MUSIC250
+SPANISH101,ElementarySpanish
+FRENCH201,IntermediateFrench,FRENCH101
+LING210,Phonetics,LING101
+LING220,Syntax,LING101
+LING330,HistoricalLinguistics,LING101MATH201,DiscreteMathematics
+CSCI300,IntroductiontoAlgorithms,CSCI200,MATH201
+BIO101,IntroductiontoBiology
+ENG210,ShakespeareanLiterature
+ART150,IntroductiontoVisualArts
+PSYCH301,AbnormalPsychology,PSYCH101
+SOC101,SociologicalTheories
+HIST400,ModernWorldHistory,HIST200
+ECON350,InternationalEconomics,ECON200
+MUSIC120,MusicAppreciation
+PHIL220,PhilosophyofEthics,PHIL101
+LING101,IntroductiontoLinguistics
+GEOG300,GlobalEnvironmentalIssues,GEOG200
+STAT250,StatisticalAnalysis
+FRENCH101,ElementaryFrench
+SPANISH201,IntermediateSpanish,SPANISH101
+COMPUTERVISION401,AdvancedComputerVision,CSCI400
+ROBOTICS450,IntroductiontoRobotics,CSCI400
+CRYPTOGRAPHY320,AppliedCryptography,CSCI301
+GAMEDESIGN250,GameDesignFundamentals,CSCI101
+ASTROPHYSICS410,StellarAstrophysics,PHY202
+LOLZ200,CatAnalysis,LOLZ0
+MATH101,CollegeAlgebra
+MATH150,Precalculus,MATH101
+MATH210,LinearAlgebra,MATH150
+MATH220,CalculusI,MATH150
+MATH221,CalculusII,MATH220
+MATH350,AbstractAlgebra,MATH210
+MATH360,RealAnalysis,MATH221
+MATH370,ComplexAnalysis,MATH221
+MATH380,NumberTheory,MATH201
+CSCI110,ProgrammingFundamentals,CSCI100
+CSCI250,ComputerArchitecture,CSCI200
+CSCI330,DatabaseSystems,CSCI200
+CSCI340,NetworksandCommunication,CSCI200
+CSCI370,CompilerDesign,CSCI300
+CSCI410,DistributedSystems,CSCI350
+CSCI420,MachineLearning,CSCI300,STAT250
+CSCI430,ArtificialIntelligence,CSCI300
+CSCI440,ParallelComputing,CSCI350
+CSCI460,SystemsSecurity,CSCI350
+CSCI470,MobileApplicationDevelopment,CSCI301

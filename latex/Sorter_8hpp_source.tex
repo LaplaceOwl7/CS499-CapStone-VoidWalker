@@ -1,0 +1,58 @@
+\doxysection{Sorter.\+hpp}
+\hypertarget{Sorter_8hpp_source}{}\label{Sorter_8hpp_source}\index{include/Sorters/Sorter.hpp@{include/Sorters/Sorter.hpp}}
+\mbox{\hyperlink{Sorter_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SORTER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SORTER\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Fetch\ all\ sorting\ algorithm\ headers}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BubbleSort_8hpp}{Sorters/BubbleSort.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{QuickSort_8hpp}{Sorters/QuickSort.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MergeSort_8hpp}{Sorters/MergeSort.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSorter}{Sorter}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSorter_a529cf055195450c48514dd4e546a8b78}{bubbleSort}}(std::vector<T>\&\ t\_toSort)\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacesorter_ae4b450a6801a9b31bcdd3b4d15e0cae1}{sorter::performBubbleSort}}(t\_toSort);}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSorter_a966eda3766ba434abbc685bfceaafd04}{quickSort}}(std::vector<T>\&\ t\_toSort)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Category\ 2\ will\ fully\ implement\ this.\(\backslash\)n"{}};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ sorter::performQuickSort(t\_toSort);}}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSorter_a85bc9492d914ded82dd9d425c49b63e0}{mergeSort}}(std::vector<T>\&\ t\_toSort)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Category\ 2\ will\ fully\ implement\ this.\(\backslash\)n"{}};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ sorter::mergeSort(t\_toSort);}}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ View\ options\ of\ the\ choices:}}
+\DoxyCodeLine{00032\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classSorter_a5c58c46298fd015fd3f38a2caad47f66}{getChoices}}()\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSorter_a8f37559cb07126082f5d5aeb7d1b86ee}{t\_sortingChoices}};}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Print\ Options:\ To\ keep\ main\ neat:}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSorter_a1fcde02c25aa2df5ef03f6b0c9b4fb98}{printChoices}}(\textcolor{keyword}{const}\ std::vector<std::string>\&\ t\_choices)\{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ t\_choices.size();\ i++)\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ t\_choices[i]\ <<\ std::endl;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ The\ actual\ choices:}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classSorter_a8f37559cb07126082f5d5aeb7d1b86ee}{t\_sortingChoices}}\ =\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}1.\ QuickSort"{}},}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}2.\ MergeSort"{}},}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}3.\ BubbleSort"{}}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SORTER\_HPP}}
+
+\end{DoxyCode}

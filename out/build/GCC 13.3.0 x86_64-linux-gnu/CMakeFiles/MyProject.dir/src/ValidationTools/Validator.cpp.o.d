@@ -167,4 +167,4 @@ CMakeFiles/MyProject.dir/src/ValidationTools/Validator.cpp.o: \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/limits \
  /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/CourseManagement/Course.hpp \
- /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/ValidationTools/Err.hpp
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/ValidationTools/Err.hpp

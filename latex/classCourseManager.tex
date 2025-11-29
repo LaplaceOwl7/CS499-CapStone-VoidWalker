@@ -1,0 +1,139 @@
+\doxysection{Course\+Manager Class Reference}
+\hypertarget{classCourseManager}{}\label{classCourseManager}\index{CourseManager@{CourseManager}}
+
+
+{\ttfamily \#include $<$Course\+Manager.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \mbox{\hyperlink{classCourseManager_a822e86d0e530f3a2d9cbc1336de6c303}{load\+Courses}} (const std\+::string \&t\+\_\+file\+Path)
+\begin{DoxyCompactList}\small\item\em Loads master vector of \doxylink{structCourse}{Course} objects into memory from a CSV file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCourseManager_a7b4cf91c7bc91f19ac66aafb1ed192de}{search\+Course}} (const std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&t\+\_\+courses, const std\+::string \&t\+\_\+course\+Id)
+\begin{DoxyCompactList}\small\item\em Performs a linear search for a specific course by ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCourseManager_a4499ac20135f6073048ec8b9666b1c86}{print\+All\+Courses}} (const std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&t\+\_\+all\+Courses)
+\begin{DoxyCompactList}\small\item\em Prints all courses in the provided vector to std\+::cout, including their ID, title, and prerequisites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCourseManager_a5d20c3df47279f70b97bcaf19cfe7b26}{display\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the textual menu choices for the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCourseManager_a5d20c3df47279f70b97bcaf19cfe7b26}\label{classCourseManager_a5d20c3df47279f70b97bcaf19cfe7b26} 
+\index{CourseManager@{CourseManager}!displayMenu@{displayMenu}}
+\index{displayMenu@{displayMenu}!CourseManager@{CourseManager}}
+\doxysubsubsection{\texorpdfstring{displayMenu()}{displayMenu()}}
+{\footnotesize\ttfamily void Course\+Manager\+::display\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the textual menu choices for the application. 
+
+\begin{DoxyPostcond}{Postcondition}
+Prints the menu options (e.\+g., “\+Print All Courses”, “\+Search for Course”, …) to std\+::cout. 
+\end{DoxyPostcond}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classCourseManager_a5d20c3df47279f70b97bcaf19cfe7b26_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCourseManager_a822e86d0e530f3a2d9cbc1336de6c303}\label{classCourseManager_a822e86d0e530f3a2d9cbc1336de6c303} 
+\index{CourseManager@{CourseManager}!loadCourses@{loadCourses}}
+\index{loadCourses@{loadCourses}!CourseManager@{CourseManager}}
+\doxysubsubsection{\texorpdfstring{loadCourses()}{loadCourses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ Course\+Manager\+::load\+Courses (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+file\+Path }\end{DoxyParamCaption})}
+
+
+
+Loads master vector of \doxylink{structCourse}{Course} objects into memory from a CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+file\+Path} & Path to the CSV file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of all loaded Course\+System\+::\+Course objects. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+The CSV file must exist and be readable. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Returns the master list; suitable for testing or further operations. 
+\end{DoxyPostcond}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCourseManager_a822e86d0e530f3a2d9cbc1336de6c303_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classCourseManager_a822e86d0e530f3a2d9cbc1336de6c303_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCourseManager_a4499ac20135f6073048ec8b9666b1c86}\label{classCourseManager_a4499ac20135f6073048ec8b9666b1c86} 
+\index{CourseManager@{CourseManager}!printAllCourses@{printAllCourses}}
+\index{printAllCourses@{printAllCourses}!CourseManager@{CourseManager}}
+\doxysubsubsection{\texorpdfstring{printAllCourses()}{printAllCourses()}}
+{\footnotesize\ttfamily void Course\+Manager\+::print\+All\+Courses (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{t\+\_\+all\+Courses }\end{DoxyParamCaption})}
+
+
+
+Prints all courses in the provided vector to std\+::cout, including their ID, title, and prerequisites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+all\+Courses} & Vector of all \doxylink{structCourse}{Course} objects to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Each Course\+System\+::\+Course must have valid data. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Outputs all courses and their prerequisites. 
+\end{DoxyPostcond}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classCourseManager_a4499ac20135f6073048ec8b9666b1c86_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCourseManager_a7b4cf91c7bc91f19ac66aafb1ed192de}\label{classCourseManager_a7b4cf91c7bc91f19ac66aafb1ed192de} 
+\index{CourseManager@{CourseManager}!searchCourse@{searchCourse}}
+\index{searchCourse@{searchCourse}!CourseManager@{CourseManager}}
+\doxysubsubsection{\texorpdfstring{searchCourse()}{searchCourse()}}
+{\footnotesize\ttfamily void Course\+Manager\+::search\+Course (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{t\+\_\+courses,  }\item[{const std\+::string \&}]{t\+\_\+course\+Id }\end{DoxyParamCaption})}
+
+
+
+Performs a linear search for a specific course by ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+courses} & Vector of \doxylink{structCourse}{Course} objects to search. \\
+\hline
+{\em t\+\_\+course\+Id} & Target course ID to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+If found, prints the course ID, title and its prerequisites to std\+::cout. 
+\end{DoxyPostcond}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCourseManager_a7b4cf91c7bc91f19ac66aafb1ed192de_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Course\+Management/\mbox{\hyperlink{CourseManager_8hpp}{Course\+Manager.\+hpp}}\item 
+src/\+Course\+Management/\mbox{\hyperlink{CourseManager_8cpp}{Course\+Manager.\+cpp}}\end{DoxyCompactItemize}

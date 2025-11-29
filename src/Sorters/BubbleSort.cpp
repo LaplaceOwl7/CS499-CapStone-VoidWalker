@@ -1,6 +1,7 @@
 
 #include "Sorters/BubbleSort.hpp"
 #include "CourseManagement/Course.hpp"
+#include "Sorters/Timer.hpp"
 #include "ValidationTools/Err.hpp"
 
 #include <vector>

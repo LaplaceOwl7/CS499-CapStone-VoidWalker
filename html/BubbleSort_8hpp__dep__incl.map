@@ -1,0 +1,14 @@
+<map id="include/Sorters/BubbleSort.hpp" name="include/Sorters/BubbleSort.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="219,5,441,31"/>
+<area shape="rect" id="Node000002" href="$Sorter_8hpp.html" title=" " alt="" coords="127,79,317,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,40,241,81,238,76,300,36"/>
+<area shape="rect" id="Node000006" href="$BubbleSort_8cpp.html" title=" " alt="" coords="341,79,535,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="360,36,422,76,419,81,357,40"/>
+<area shape="rect" id="Node000003" href="$QuickSort_8hpp.html" title=" " alt="" coords="5,159,220,185"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,114,124,161,121,157,186,109"/>
+<area shape="rect" id="Node000004" href="$CourseManager_8cpp.html" title=" " alt="" coords="245,152,421,192"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="251,110,308,150,304,154,248,114"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title=" " alt="" coords="445,159,551,185"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="277,105,433,149,459,157,458,162,432,155,275,110"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="145,150,211,102,214,106,148,154"/>
+</map>

@@ -1,0 +1,190 @@
+\doxysection{sorter Namespace Reference}
+\hypertarget{namespacesorter}{}\label{namespacesorter}\index{sorter@{sorter}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacesorter_ae4b450a6801a9b31bcdd3b4d15e0cae1}{perform\+Bubble\+Sort}} (std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&courses)
+\item 
+static void \mbox{\hyperlink{namespacesorter_a4757a062dcf81885e22b632fec0aece4}{merge}} (std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&t\+\_\+vector, int t\+\_\+left, int t\+\_\+mid, int t\+\_\+right)
+\item 
+static void \mbox{\hyperlink{namespacesorter_ad8fb83b6f615737f59974fbf088f9493}{merge\+Sort\+Recursive}} (std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&t\+\_\+vector, int t\+\_\+left, int t\+\_\+right)
+\item 
+void \mbox{\hyperlink{namespacesorter_a81d501715ab5d67997031ee8893c4b06}{merge\+Sort}} (std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&t\+\_\+courses)
+\item 
+int \mbox{\hyperlink{namespacesorter_ad5e1d5b546383bff48603b3aedd6fc43}{partition}} (std\+::vector$<$ int $>$ \&arr, int low, int high)
+\begin{DoxyCompactList}\small\item\em Partition the sub-\/array of arr between indices low and high, inclusive. Uses the last element as pivot, and moves smaller elements to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacesorter_a31eb666d8b45bf29f4cb1a5a92a697f0}{quick\+Sort}} (std\+::vector$<$ int $>$ \&arr, int low, int high)
+\item 
+static void \mbox{\hyperlink{namespacesorter_a4757a062dcf81885e22b632fec0aece4}{merge}} (std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&t\+\_\+vector, int t\+\_\+left, int t\+\_\+mid, int t\+\_\+right)
+\begin{DoxyCompactList}\small\item\em Sorts the given vector of \doxylink{structCourse}{Course} objects by course\+Id using the merge sort algorithm. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{namespacesorter_ad8fb83b6f615737f59974fbf088f9493}{merge\+Sort\+Recursive}} (std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&t\+\_\+vector, int t\+\_\+left, int t\+\_\+right)
+\item 
+void \mbox{\hyperlink{namespacesorter_a272c0cb2677071e00c5bbb8e1a3c6e13}{perform\+Quick\+Sort}} (std\+::vector$<$ int $>$ \&arr, int low, int high)
+\begin{DoxyCompactList}\small\item\em Sorts the vector of ints between indices low and high (inclusive) using the Quick\+Sort algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesorter_a4757a062dcf81885e22b632fec0aece4}\label{namespacesorter_a4757a062dcf81885e22b632fec0aece4} 
+\index{sorter@{sorter}!merge@{merge}}
+\index{merge@{merge}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void sorter\+::merge (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{t\+\_\+vector,  }\item[{int}]{t\+\_\+left,  }\item[{int}]{t\+\_\+mid,  }\item[{int}]{t\+\_\+right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sorts the given vector of \doxylink{structCourse}{Course} objects by course\+Id using the merge sort algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em courses;} & sorts the vector of course objects by their course\+IDs inplace \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classA}{A} sorted vector of Course\+System\+::\+Course objects in ascending course\+Id order. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+courses contains valid \doxylink{structCourse}{Course} objects with initial course\+Id values. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Sorts the inputted vector in place 
+\end{DoxyPostcond}
+\Hypertarget{namespacesorter_a4757a062dcf81885e22b632fec0aece4}\label{namespacesorter_a4757a062dcf81885e22b632fec0aece4} 
+\index{sorter@{sorter}!merge@{merge}}
+\index{merge@{merge}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void sorter\+::merge (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{t\+\_\+vector,  }\item[{int}]{t\+\_\+left,  }\item[{int}]{t\+\_\+mid,  }\item[{int}]{t\+\_\+right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesorter_a4757a062dcf81885e22b632fec0aece4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacesorter_a81d501715ab5d67997031ee8893c4b06}\label{namespacesorter_a81d501715ab5d67997031ee8893c4b06} 
+\index{sorter@{sorter}!mergeSort@{mergeSort}}
+\index{mergeSort@{mergeSort}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{mergeSort()}{mergeSort()}}
+{\footnotesize\ttfamily void sorter\+::merge\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{t\+\_\+courses }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesorter_a81d501715ab5d67997031ee8893c4b06_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacesorter_ad8fb83b6f615737f59974fbf088f9493}\label{namespacesorter_ad8fb83b6f615737f59974fbf088f9493} 
+\index{sorter@{sorter}!mergeSortRecursive@{mergeSortRecursive}}
+\index{mergeSortRecursive@{mergeSortRecursive}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{mergeSortRecursive()}{mergeSortRecursive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void sorter\+::merge\+Sort\+Recursive (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{t\+\_\+vector,  }\item[{int}]{t\+\_\+left,  }\item[{int}]{t\+\_\+right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{namespacesorter_ad8fb83b6f615737f59974fbf088f9493}\label{namespacesorter_ad8fb83b6f615737f59974fbf088f9493} 
+\index{sorter@{sorter}!mergeSortRecursive@{mergeSortRecursive}}
+\index{mergeSortRecursive@{mergeSortRecursive}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{mergeSortRecursive()}{mergeSortRecursive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void sorter\+::merge\+Sort\+Recursive (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{t\+\_\+vector,  }\item[{int}]{t\+\_\+left,  }\item[{int}]{t\+\_\+right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{namespacesorter_ad8fb83b6f615737f59974fbf088f9493_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesorter_ad8fb83b6f615737f59974fbf088f9493_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacesorter_ad5e1d5b546383bff48603b3aedd6fc43}\label{namespacesorter_ad5e1d5b546383bff48603b3aedd6fc43} 
+\index{sorter@{sorter}!partition@{partition}}
+\index{partition@{partition}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily int sorter\+::partition (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{arr,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Partition the sub-\/array of arr between indices low and high, inclusive. Uses the last element as pivot, and moves smaller elements to the left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Reference to the vector of ints to be partitioned. \\
+\hline
+{\em low} & The starting index of the sub-\/array. \\
+\hline
+{\em high} & The ending index of the sub-\/array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The final pivot index after partitioning. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{namespacesorter_ad5e1d5b546383bff48603b3aedd6fc43_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacesorter_ae4b450a6801a9b31bcdd3b4d15e0cae1}\label{namespacesorter_ae4b450a6801a9b31bcdd3b4d15e0cae1} 
+\index{sorter@{sorter}!performBubbleSort@{performBubbleSort}}
+\index{performBubbleSort@{performBubbleSort}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{performBubbleSort()}{performBubbleSort()}}
+{\footnotesize\ttfamily void sorter\+::perform\+Bubble\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCourseData_1_1Course}{Course\+Data\+::\+Course}} $>$ \&}]{courses }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesorter_ae4b450a6801a9b31bcdd3b4d15e0cae1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesorter_ae4b450a6801a9b31bcdd3b4d15e0cae1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacesorter_a272c0cb2677071e00c5bbb8e1a3c6e13}\label{namespacesorter_a272c0cb2677071e00c5bbb8e1a3c6e13} 
+\index{sorter@{sorter}!performQuickSort@{performQuickSort}}
+\index{performQuickSort@{performQuickSort}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{performQuickSort()}{performQuickSort()}}
+{\footnotesize\ttfamily void sorter\+::perform\+Quick\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{arr,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Sorts the vector of ints between indices low and high (inclusive) using the Quick\+Sort algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Reference to the vector of ints to be sorted. \\
+\hline
+{\em low} & The starting index of the segment to sort. \\
+\hline
+{\em high} & The ending index of the segment to sort. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacesorter_a31eb666d8b45bf29f4cb1a5a92a697f0}\label{namespacesorter_a31eb666d8b45bf29f4cb1a5a92a697f0} 
+\index{sorter@{sorter}!quickSort@{quickSort}}
+\index{quickSort@{quickSort}!sorter@{sorter}}
+\doxysubsubsection{\texorpdfstring{quickSort()}{quickSort()}}
+{\footnotesize\ttfamily void sorter\+::quick\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{arr,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{namespacesorter_a31eb666d8b45bf29f4cb1a5a92a697f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{namespacesorter_a31eb666d8b45bf29f4cb1a5a92a697f0_icgraph}
+\end{center}
+\end{figure}

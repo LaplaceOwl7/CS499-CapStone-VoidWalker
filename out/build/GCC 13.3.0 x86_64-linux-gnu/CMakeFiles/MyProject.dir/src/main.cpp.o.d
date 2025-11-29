@@ -167,21 +167,33 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/limits \
  /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/CourseManagement/CourseManager.hpp \
- /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/ValidationTools/Validator.hpp \
+ /usr/include/c++/13/optional \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/ValidationTools/Validator.hpp \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
  /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/CourseManagement/Course.hpp \
- /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/ValidationTools/Err.hpp \
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/ValidationTools/Err.hpp \
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Database/DataManager.hpp \
+ /usr/include/sqlite3.h \
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Database/User.hpp \
  /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Sorters/Sorter.hpp \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Sorters/BubbleSort.hpp \
  /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Sorters/QuickSort.hpp \
- /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Sorters/MergeSort.hpp
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Sorters/MergeSort.hpp \
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/Sorters/Timer.hpp \
+ /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
+ /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/include/FileManagement/Benchmarker.hpp

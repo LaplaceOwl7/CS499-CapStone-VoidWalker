@@ -195,6 +195,76 @@ CMakeFiles/MyProject.dir/src/Sorters/QuickSort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Sorters/QuickSort.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Sorters/QuickSort.cpp -o CMakeFiles/MyProject.dir/src/Sorters/QuickSort.cpp.s
 
+CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o: /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Sorters/Timer.cpp
+CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o -MF CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o.d -o CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o -c /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Sorters/Timer.cpp
+
+CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Sorters/Timer.cpp > CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.i
+
+CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Sorters/Timer.cpp -o CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.s
+
+CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o: /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/FileManagement/Benchmarker.cpp
+CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o -MF CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o.d -o CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o -c /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/FileManagement/Benchmarker.cpp
+
+CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/FileManagement/Benchmarker.cpp > CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.i
+
+CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/FileManagement/Benchmarker.cpp -o CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.s
+
+CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o: /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/DataManager.cpp
+CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o -MF CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o.d -o CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o -c /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/DataManager.cpp
+
+CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/DataManager.cpp > CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.i
+
+CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/DataManager.cpp -o CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.s
+
+CMakeFiles/MyProject.dir/src/Database/User.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Database/User.cpp.o: /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/User.cpp
+CMakeFiles/MyProject.dir/src/Database/User.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyProject.dir/src/Database/User.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/Database/User.cpp.o -MF CMakeFiles/MyProject.dir/src/Database/User.cpp.o.d -o CMakeFiles/MyProject.dir/src/Database/User.cpp.o -c /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/User.cpp
+
+CMakeFiles/MyProject.dir/src/Database/User.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Database/User.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/User.cpp > CMakeFiles/MyProject.dir/src/Database/User.cpp.i
+
+CMakeFiles/MyProject.dir/src/Database/User.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Database/User.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/User.cpp -o CMakeFiles/MyProject.dir/src/Database/User.cpp.s
+
+CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o: /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/Recorder.cpp
+CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o -MF CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o.d -o CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o -c /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/Recorder.cpp
+
+CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/Recorder.cpp > CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.i
+
+CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/src/Database/Recorder.cpp -o CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.s
+
 # Object files for target MyProject
 MyProject_OBJECTS = \
 "CMakeFiles/MyProject.dir/src/main.cpp.o" \
@@ -205,27 +275,37 @@ MyProject_OBJECTS = \
 "CMakeFiles/MyProject.dir/src/Sorters/BubbleSort.cpp.o" \
 "CMakeFiles/MyProject.dir/src/Sorters/MergeSort.cpp.o" \
 "CMakeFiles/MyProject.dir/src/Sorters/Sorter.cpp.o" \
-"CMakeFiles/MyProject.dir/src/Sorters/QuickSort.cpp.o"
+"CMakeFiles/MyProject.dir/src/Sorters/QuickSort.cpp.o" \
+"CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o" \
+"CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o" \
+"CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o" \
+"CMakeFiles/MyProject.dir/src/Database/User.cpp.o" \
+"CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
-MyProject: CMakeFiles/MyProject.dir/src/main.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/CourseManagement/Course.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/CourseManagement/CourseManager.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/ValidationTools/Err.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/ValidationTools/Validator.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/Sorters/BubbleSort.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/Sorters/MergeSort.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/Sorters/Sorter.cpp.o
-MyProject: CMakeFiles/MyProject.dir/src/Sorters/QuickSort.cpp.o
-MyProject: CMakeFiles/MyProject.dir/build.make
-MyProject: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable MyProject"
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/main.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/CourseManagement/Course.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/CourseManagement/CourseManager.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/ValidationTools/Err.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/ValidationTools/Validator.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Sorters/BubbleSort.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Sorters/MergeSort.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Sorters/Sorter.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Sorters/QuickSort.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Sorters/Timer.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/FileManagement/Benchmarker.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Database/DataManager.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Database/User.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/src/Database/Recorder.cpp.o
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/build.make
+/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject: CMakeFiles/MyProject.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/MyProject.dir/build: MyProject
+CMakeFiles/MyProject.dir/build: /home/aero-vanderwaals/SNHU/CS499/Data-Structures-And-Algorithms-main/MyProject
 .PHONY : CMakeFiles/MyProject.dir/build
 
 CMakeFiles/MyProject.dir/clean:

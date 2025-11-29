@@ -10,6 +10,8 @@
 
 #include "CourseManagement/CourseManager.hpp"
 #include "Sorters/Sorter.hpp"
+#include "FileManagement/Benchmarker.hpp"
+#include "Database/User.hpp"
 
 int main(int argc, char* argv[]) {
     CourseManager manager; // Call a course manager to handle this.
@@ -17,23 +19,48 @@ int main(int argc, char* argv[]) {
     std::vector<CourseData::Course> testCourses; // For CSV
     std::string userQuery; // For user search
     ErrLog error;
-    
-    /*
-    - Load SQL database here.
-    - Will be implemented in category 3
-    - For now, use test CSV
-    */
+    Benchmarker benchmarker;
 
+   Auth::User currentUser;
+
+    auto loginResult = Auth::promptLogin(
+        manager.getDatabaseManager().getRawDB()
+    );
+
+    if (!loginResult.has_value()) {
+        std::cout << "Login failed. Exiting.\n";
+        return 0;
+    }
+
+        currentUser = loginResult.value();
+
+    if (currentUser.is_admin) {
+        std::cout << "Welcome, Admin " << currentUser.username << "\n";
+    } else {
+        std::cout << "Welcome, " << currentUser.username << " (read-only)\n";
+    }
+
+
+    // As of Category 3, the SQLite database is now 'owned' by CourseManager
     try {
-        testCourses = manager.loadCourses("seedInput.csv");
+        std::cout << "Loading Courses from database...\n";
+        // Ran Once: testCourses = manager.loadCoursesFromDBWithSeed("seedInput.csv");
+        testCourses = manager.loadCoursesFromDB();
+
+        if (testCourses.empty()){
+            std::cout << "Database failed to load\nDefaulting to seeded database\n";
+            testCourses = manager.loadCourses("seedInput.csv");
+        }
     } catch (std::ios_base::failure) { // Typically "file not found"
-        std::cerr << "Failed to load CSV database; aborting\n";
+        error.genLogFile("Failed to load CSV database; aborting\n");
         return 0;
     };
 
     int userChoice = 0;
 
     manager.displayMenu();
+
+    std::vector<CourseData::Course> unsortedCourses = testCourses;
 
     do {
         std::cout << "What would you like to do?\n";
@@ -44,6 +71,10 @@ int main(int argc, char* argv[]) {
         {
             case 1:
                 std::cout << "Printing all courses...\n";
+                // Refresh the entire database:
+                testCourses = manager.loadCoursesFromDB(); 
+
+                // Actually print The courses
                 manager.printAllCourses(testCourses);
                 break;
             case 2:
@@ -56,8 +87,7 @@ int main(int argc, char* argv[]) {
                 manager.searchCourse(testCourses, userQuery);
             
                 break;
-            case 3:  
-            // Sort Via Algorithms
+            case 3:  // Sort Via Algorithms
             std::cout << "\nWhich Algorithm would you like to use?\n";
 
             sorter.printChoices(sorter.getChoices());
@@ -84,6 +114,11 @@ int main(int argc, char* argv[]) {
                         manager.printAllCourses(testCourses);
                         break;
 
+                    case 4: // Use Standard sort
+                        std::cout << "Sorting with Standard Sort...\n";
+                        sorter.standardSort(testCourses);
+                        manager.printAllCourses(testCourses);
+
                     case 0:
                         std::cout << "Cancelled.\n";
                         break;
@@ -94,29 +129,36 @@ int main(int argc, char* argv[]) {
                 }
                 break;
 
-            case 4:
-                //Print dynamics, algorithmic efficiency
-                std::cout << "Check back in on After Category 2 is done!\n";
+            case 4: //Print dynamics, algorithmic efficiency to the console via std::cout
+                std::cout << "Benchmarking Algorithms...\n";
+                testCourses = unsortedCourses;
+                benchmarker.performBenchMark(testCourses);
+                benchmarker.printBenchmarkResults();
                 break;
+
             case 5:
                 // print markdown of the algorithm's stats, database, comparsion
-                std::cout << "Check back in on After Category 2 is done!\n";
+                benchmarker.generateMarkdownReport();
                 break;
-            case 6:
-                // Use optimized algorithm
-                std::cout << "Check back in on After Category 2 is done!\n";
+
+            case 6: // Display optimized algorithm
+                benchmarker.printMostOptimized();
                 break;
-            case 7:
-                // Quit
-                return 0;
+            case 7: // Modify Database
+                std::cout << "=== === === ===\nModify Database:";
+                manager.takeCRUDOperation(
+                    manager,
+                    currentUser);
                 break;
+
+            case 0: // Quit
+                break;
+
             default:
-                std::cout << "Invalid option\n";
+                std::cout << "\nInvalid option\n";
         }
 
-    } while (userChoice != 7);
-
-    std::cout << "Goodbye!\n";
+    } while (userChoice != 0);
 
     return 0;
 }
